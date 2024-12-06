@@ -63,8 +63,6 @@
     @apply font-title;
   }
 
-  p,
-  span,
   label,
   a,
   input,
@@ -72,7 +70,12 @@
   button,
   ul,
   li {
-    @apply font-body font-medium;
+    @apply font-body font-light;
+  }
+
+  p,
+  span {
+    @apply font-body font-normal;
   }
 
   main {

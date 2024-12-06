@@ -21,9 +21,9 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos]);
 
-  const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
-  };
+//   const toggleNav = () => {
+//     setIsNavOpen(!isNavOpen);
+//   };
 
   //   const closeNav = () => {
   //     setIsNavOpen(false);
