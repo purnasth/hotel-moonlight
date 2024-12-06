@@ -1,61 +1,7 @@
 import { HiArrowLongRight } from 'react-icons/hi2';
 import { Link } from 'react-router-dom';
+import { servicesContents } from '../../constants/data';
 
-const servicesContents = [
-  {
-    id: 'services',
-    title:
-      'The Hotel Moonlight offers a variety of services to make your stay more enjoyable.',
-    subtitle: '',
-    subheading: 'Experience the ultimate Staycation in Hotel Ichchha',
-    description:
-      'Hotel Ichchha rooms and suites are a symphony of luxury and comfort, designed to enchant every guest where luxury embraces elegance, Hotel Ichchha offers an exquisite blend of comfort and grandeur. Experience unparalleled hospitality and serene elegance in every stay.',
-    accomodation: [
-      {
-        id: 'accommodation',
-        title: 'Accommodation',
-        subtitle: '',
-        description:
-          "In the heart of Kathmandu's tourism hub, discover a tranquil haven filled with sincere Nepali hospitality with a comfortable stay",
-        imageUrl: 'https://hotelmoonlight.com/images/subpackage/HOGxu-b4.jpg',
-        category: 'accommodation',
-        router: '/accommodation',
-      },
-      {
-        id: 'dine',
-        title: 'Fine Dine',
-        subtitle: '',
-        description:
-          'Dine in style at our multi-cuisine Juneli Restaurant, where every meal is a culinary delight.',
-        imageUrl:
-          'https://hotelmoonlight.com/assets/userfiles/images/garden.jpg',
-        category: 'dine',
-        router: '/dine',
-      },
-      {
-        id: 'occasion',
-        title: 'Occasion',
-        subtitle: '',
-        description:
-          "Celebrate your special moments with us, and we will make sure it's a memorable one.",
-        imageUrl:
-          'https://hotelmoonlight.com/assets/userfiles/images/Conferencehall.jpg',
-        category: 'occasion',
-        router: '/occasion',
-      },
-      {
-        id: 'spa',
-        title: 'Spa',
-        subtitle: '',
-        description:
-          'Relax and rejuvenate your body, mind, and soul at our spa and wellness center with a range of treatments.',
-        imageUrl: 'https://hotelmoonlight.com/assets/userfiles/images/spa2.jpg',
-        category: 'spa',
-        router: '/spa',
-      },
-    ],
-  },
-];
 const servicesData = servicesContents[0];
 
 const Services = () => {
@@ -89,7 +35,7 @@ const Services = () => {
                   className={`flex w-full items-center justify-between gap-10 px-4 py-12 transition-all md:w-2/3 md:p-12 duration-${duration} md:group-hover:translate-x-4`}
                 >
                   <div className="flex flex-col items-start gap-2 md:gap-5">
-                    <h4 className="text-2xl md:text-4xl">{suite.title}</h4>
+                    <h4 className="text-2xl md:text-4xl capitalize">{suite.title}</h4>
                     <p className="line-clamp-2 max-w-md text-sm opacity-80">
                       {suite.description}
                     </p>

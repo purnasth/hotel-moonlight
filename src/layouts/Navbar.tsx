@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 z-40 w-full font-serif transition-all duration-[1s] ${
+        className={`fixed top-0 z-40 w-full transition-all duration-[1s] ${
           window.scrollY > 0 ? '' : ''
         } ${visible ? '' : '-translate-y-full'}`}
       >
@@ -97,7 +97,7 @@ const Navbar: React.FC = () => {
               <img
                 src={logo}
                 alt="logo"
-                className={`filter-white h-36 w-40 object-contain transition-all duration-[1s] ${
+                className={`filter-white h-36 w-40 object-contain transition-all duration-[1s] -mt-6 ${
                   visible ? '-translate-y-0' : '-translate-y-6 scale-0'
                 } ${
                   window.scrollY > 0
