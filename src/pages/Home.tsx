@@ -1,10 +1,12 @@
 import React from 'react';
-import Intro from '../components/Intro';
+import Slider from '../components/Slider';
+// import Intro from '../components/Intro';
 
 const Home: React.FC = () => {
   return (
     <>
-      <Intro />
+      {/* <Intro /> */}
+      <Slider />
     </>
   );
 };

@@ -7,12 +7,14 @@ import {
 } from 'react-router-dom';
 import Home from './pages/Home';
 import RouterToTop from './utils/RouterToTop';
+import Navbar from './layouts/Navbar';
 
 const App: React.FC = () => {
   return (
     <>
       <Router>
         <RouterToTop />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Navigate to="/" />} />
