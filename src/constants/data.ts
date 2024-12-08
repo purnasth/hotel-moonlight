@@ -7,7 +7,7 @@ import { TbBrandBooking } from 'react-icons/tb';
 
 export const servicesContents = [
   {
-    id: 'services',
+  id: 'services',
     title:
       'The Hotel Moonlight offers a variety of services to make your stay more enjoyable.',
     subtitle: '',
