@@ -9,7 +9,16 @@ const DemoService = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-      setVisible(prevScrollPos > currentScrollPos || currentScrollPos === 0);
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.body.scrollHeight;
+
+      // Show the section if scrolling up or at the top of the page
+      // or if the user is near the bottom of the page
+      setVisible(
+        prevScrollPos > currentScrollPos ||
+        currentScrollPos === 0 ||
+        currentScrollPos + windowHeight >= documentHeight - 500
+      );
       setPrevScrollPos(currentScrollPos);
     };
 
@@ -19,7 +28,6 @@ const DemoService = () => {
   }, [prevScrollPos]);
 
   const servicesData = servicesContents[0];
-
   const description = servicesData.description;
 
   return (
