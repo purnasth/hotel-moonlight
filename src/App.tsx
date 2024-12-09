@@ -8,12 +8,14 @@ import {
 import Home from './pages/Home';
 import RouterToTop from './utils/RouterToTop';
 import Navbar from './layouts/Navbar';
+import WhatsApp from './components/ui/WhatsApp';
 
 const App: React.FC = () => {
   return (
     <>
       <Router>
         <RouterToTop />
+        <WhatsApp />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
