@@ -2,6 +2,8 @@ import { HiArrowLongRight } from 'react-icons/hi2';
 import { Link } from 'react-router-dom';
 import { servicesContents } from '../../constants/data';
 
+import blueGradient from '../../assets/pattern/blue-gradient.png';
+
 const servicesData = servicesContents[0];
 
 const Services = () => {
@@ -9,8 +11,13 @@ const Services = () => {
   return (
     <>
       <main>
+        <div
+          className="pointer-events-none absolute inset-0 -z-10 size-full select-none bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${blueGradient})` }}
+          aria-hidden="true"
+        />
         <div className="container">
-          <h2 className="text-2xl font-medium text-dark md:text-4xl lg:text-6xl lg:leading-snug">
+          <h2 className="text-2xl font-medium text-light md:text-4xl lg:text-6xl lg:leading-snug">
             {servicesData.title}
           </h2>
           <div className="mt-12 overflow-hidden rounded-3xl border-[1px] border-dark/40">
@@ -22,7 +29,7 @@ const Services = () => {
                   index !== servicesData.accomodation.length - 1
                     ? 'mb-8 border-b-[1px]'
                     : 'mb-0 border-b-0'
-                } hover:bg-light/80 group flex flex-col items-center justify-between gap-0 border-dark/30 bg-white transition-all md:mb-0 md:flex-row duration-${duration}`}
+                } group flex flex-col items-center justify-between gap-0 border-dark/30 bg-white transition-all hover:bg-light/80 md:mb-0 md:flex-row duration-${duration}`}
               >
                 <div className="flex w-full md:w-1/3">
                   <img
@@ -35,7 +42,9 @@ const Services = () => {
                   className={`flex w-full items-center justify-between gap-10 px-4 py-12 transition-all md:w-2/3 md:p-12 duration-${duration} md:group-hover:translate-x-4`}
                 >
                   <div className="flex flex-col items-start gap-2 md:gap-5">
-                    <h4 className="text-2xl md:text-4xl capitalize">{suite.title}</h4>
+                    <h4 className="text-gradient text-2xl capitalize md:text-4xl">
+                      {suite.title}
+                    </h4>
                     <p className="line-clamp-2 max-w-md text-sm opacity-80">
                       {suite.description}
                     </p>
@@ -46,7 +55,7 @@ const Services = () => {
                     <Link
                       type="button"
                       to={suite.router}
-                      className={`bg-light group-hover:text-light group flex h-6 w-16 items-center justify-center rounded-full text-2xl text-dark outline outline-1 outline-black/20 transition-all duration-300 ease-linear group-hover:bg-dark`}
+                      className={`group flex h-6 w-16 items-center justify-center rounded-full bg-light text-2xl text-dark outline outline-1 outline-black/20 transition-all duration-300 ease-linear group-hover:bg-gradient group-hover:text-light`}
                       title="Explore More"
                       aria-label="Explore More"
                     >
@@ -65,7 +74,7 @@ const Services = () => {
           <Link
             to="https://www.tripadvisor.com/Hotel_Review-g293890-d654253-Reviews-Hotel_Moonlight-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html"
             target="_blank"
-            className={`bg-light group mt-8 inline-flex items-center gap-5 rounded-full border-dark/30 px-6 py-2 transition-all md:mb-0 md:flex-row duration-${duration}`}
+            className={`group mt-8 inline-flex items-center gap-5 rounded-full border-dark/30 bg-light px-6 py-2 transition-all md:mb-0 md:flex-row duration-${duration}`}
           >
             <svg
               viewBox="0 0 24 24"

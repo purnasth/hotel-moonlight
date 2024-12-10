@@ -9,7 +9,7 @@
 
 @layer components {
   ::selection {
-    @apply text-light bg-dark;
+    @apply bg-dark text-light;
   }
 
   /* * {
@@ -20,7 +20,7 @@
   }
 
   .scroll::-webkit-scrollbar {
-    @apply bg-light w-1 rounded-full;
+    @apply w-1 rounded-full bg-light;
   }
 
   .scroll::-webkit-scrollbar-thumb {
@@ -44,7 +44,7 @@
     } */
 
   body {
-    @apply font-body;
+    @apply overflow-x-hidden font-body;
   }
 
   main,
@@ -87,11 +87,32 @@
     } */
 
   .filter-white {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+      hue-rotate(288deg) brightness(102%) contrast(102%);
   }
 
   .filter-black {
-    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%);
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%)
+      hue-rotate(327deg) brightness(96%) contrast(104%);
+  }
+
+  /* .bg-gradient {
+    background: linear-gradient(
+      89.5deg,
+      rgb(4, 29, 55) -0.1%,
+      rgb(2, 67, 135) 25.1%,
+      rgb(28, 133, 243) 49.6%,
+      rgb(115, 181, 250) 74.5%,
+      rgb(214, 239, 253) 99.3%
+    );
+  } */
+
+  .bg-gradient {
+    @apply bg-gradient-to-r from-[#134e88] from-[27%] via-[#01689b] via-[40%] to-[#21bcec] to-[98%];
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-[#134e88] from-[27%] via-[#01689b] via-[40%] to-[#21bcec] to-[98%] bg-clip-text text-transparent;
   }
 
   .transition-300 {
@@ -111,7 +132,7 @@
   }
 
   .overlay {
-    @apply absolute inset-0 bg-black/20 z-0 pointer-events-none;
+    @apply pointer-events-none absolute inset-0 z-0 bg-black/20;
   }
 }
 

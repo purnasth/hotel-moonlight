@@ -1,8 +1,10 @@
 import athithiArts from '../assets/arts/athithi.png';
+import moonLight from '../assets/arts/moon.png';
 
 const About = () => {
   return (
     <main>
+      <img src={moonLight} alt="" className="absolute bottom-0 -z-10 opacity-80" />
       <div className="flex flex-col items-center justify-center">
         <img
           src={athithiArts}
@@ -13,7 +15,7 @@ const About = () => {
       </div>
 
       <div className="container mt-24">
-        <h2 className="text-5xl leading-snug">
+        <h2 className="text-gradient text-5xl leading-snug">
           The Hotel Moonlight is more than 'bricks & stones', it's about our
           people & our guests.
         </h2>
@@ -25,16 +27,14 @@ const About = () => {
               while retaining traditional Nepali ambiance and hospitality. From
               our front gate you can take an easy stroll to the hustle and
               bustle of Thamel, with its array of shops, restaurants, bars and
-              nightlife. 
-              
-              <br/>
-              <br/>
-              <br/>
-              
-              Moonlight is the ideal location for exploring the
-              culture and lifestyle of Kathmandu. Swayambhunath (The Monkey
-              Temple) is a thirty-minute walk or 10 minutes by taxi. Other
-              sights are but a short taxi ride away.
+              nightlife.
+              <br />
+              <br />
+              <br />
+              Moonlight is the ideal location for exploring the culture and
+              lifestyle of Kathmandu. Swayambhunath (The Monkey Temple) is a
+              thirty-minute walk or 10 minutes by taxi. Other sights are but a
+              short taxi ride away.
             </p>
           </div>
 

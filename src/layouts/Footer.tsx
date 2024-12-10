@@ -1,18 +1,47 @@
 import { Link } from 'react-router-dom';
 import TestimonialSlider from '../components/TestimonialSlider';
+import logo from '../assets/logo.png';
+import blueGradient from '../assets/pattern/blue-gradient.png';
+import moonLight from '../assets/arts/moon.png';
 
 const year = new Date().getFullYear();
 
 const Footer = () => {
   return (
     <>
-      <main className="pb-24">
+      <main className="pb-24 text-light">
+        <img
+          src={moonLight}
+          alt="Moon Light"
+          className="absolute right-1/2 top-0 -z-10 size-full translate-x-1/2 object-contain opacity-70 blur-3xl"
+        />
+        <img
+          src={moonLight}
+          alt="Moon Light"
+          className="absolute right-1/2 top-0 -z-10 size-full translate-x-1/2 object-contain opacity-50"
+        />
+
+        <div
+          className="pointer-events-none absolute inset-0 -z-20 size-full select-none bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${blueGradient})` }}
+          aria-hidden="true"
+        />
         <div className="container">
           <h4 className="mb-16 text-center text-4xl">Valued Guests Feedback</h4>
           <TestimonialSlider />
-          <hr className="border-1 my-24 border-gray-300" />
+          <hr className="border-1 my-12 border-light/20" />
 
-          <div className="mb-8 mt-12 space-y-4 text-center">
+          <div className="block text-center">
+            <Link to="/">
+              <img
+                src={logo}
+                alt="logo"
+                className={`mx-auto inline-flex h-48 w-56 items-center justify-center bg-light object-contain p-2 transition-all duration-[1s]`}
+              />
+            </Link>
+          </div>
+
+          <div className="my-8 space-y-4 text-center">
             <p className="text-sm font-semibold uppercase">We accept</p>
             <div className="flex items-center justify-center gap-4">
               <img
@@ -40,10 +69,7 @@ const Footer = () => {
 
           <p className="text-center text-sm">
             &copy; {year} Hotel Moonlight. All rights reserved. Developed by
-            <Link
-              to="https://longtail.info"
-              className="ml-1 font-bold text-dark"
-            >
+            <Link to="https://longtail.info" className="ml-1 font-bold">
               Longtail e-Media
             </Link>
             .
