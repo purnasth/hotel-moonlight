@@ -2,9 +2,6 @@ import { FaFacebookF, FaMapMarkerAlt, FaYoutube } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { MdLocalPhone, MdMail } from 'react-icons/md';
 
-import { FaTripadvisor } from 'react-icons/fa';
-import { TbBrandBooking } from 'react-icons/tb';
-
 export const servicesContents = [
   {
   id: 'services',
