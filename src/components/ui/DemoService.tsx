@@ -33,7 +33,7 @@ const DemoService = () => {
   return (
     <>
       <div
-        className={`transition-1000 fixed bottom-8 left-8 z-50 max-w-xs origin-left bg-light shadow ${visible ? 'translate-x-0 opacity-100' : '-translate-x-[150%] opacity-0'}`}
+        className={`transition-1000 fixed bottom-8 left-8 z-40 max-w-xs origin-left bg-light shadow ${visible ? 'translate-x-0 opacity-100' : '-translate-x-[150%] opacity-0'}`}
       >
         <div className="flex size-full flex-col gap-4 p-4">
           <div className="flex items-center">

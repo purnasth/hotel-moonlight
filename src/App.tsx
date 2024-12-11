@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
+  // Navigate,
 } from 'react-router-dom';
 import Home from './pages/Home';
 import RouterToTop from './utils/RouterToTop';
@@ -20,7 +20,7 @@ const App: React.FC = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="*" element={<Navigate to="/" />} />
+          {/* <Route path="*" element={<Navigate to="/" />} /> */}
         </Routes>
         <Footer />
       </Router>

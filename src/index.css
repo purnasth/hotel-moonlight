@@ -87,13 +87,11 @@
     } */
 
   .filter-white {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
-      hue-rotate(288deg) brightness(102%) contrast(102%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   }
 
   .filter-black {
-    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%)
-      hue-rotate(327deg) brightness(96%) contrast(104%);
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%);
   }
 
   /* .bg-gradient {
@@ -128,7 +126,7 @@
   }
 
   .navlink {
-    @apply transition-300 inline-flex w-full items-center justify-between pb-2 text-2xl font-bold capitalize text-dark group-hover:font-bold group-hover:tracking-wider;
+    @apply transition-300 flex w-full items-center justify-start gap-3 text-3xl capitalize text-light;
   }
 
   .overlay {
