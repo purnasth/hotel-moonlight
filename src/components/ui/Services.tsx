@@ -10,7 +10,7 @@ const Services = () => {
   const duration = '700';
   return (
     <>
-      <main>
+      <main className='bg-dark'>
         <div
           className="pointer-events-none absolute inset-0 -z-10 size-full select-none bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${blueGradient})` }}

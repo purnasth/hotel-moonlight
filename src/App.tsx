@@ -10,6 +10,7 @@ import RouterToTop from './utils/RouterToTop';
 import Navbar from './layouts/Navbar';
 import WhatsApp from './components/ui/WhatsApp';
 import Footer from './layouts/Footer';
+import ArticlePage from './pages/ArticlePage';
 
 const App: React.FC = () => {
   return (
@@ -20,7 +21,7 @@ const App: React.FC = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="*" element={<Navigate to="/" />} /> */}
+          <Route path="/article/:slug" element={<ArticlePage />} />
         </Routes>
         <Footer />
       </Router>

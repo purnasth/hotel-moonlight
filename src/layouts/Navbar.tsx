@@ -15,7 +15,7 @@ const navLinks = [
   {
     id: 2,
     title: 'About',
-    url: '/about',
+    url: '/article/about',
     demoImage:
       'https://hotelmoonlight.com/images/gallery/galleryimages/JfNu4-e1.jpg',
     priority: 'low',
@@ -24,7 +24,8 @@ const navLinks = [
     id: 3,
     title: 'Stay',
     url: '/stay',
-    demoImage: 'https://hotelmoonlight.com/images/gallery/galleryimages/c0A4o-r1.jpg',
+    demoImage:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/c0A4o-r1.jpg',
     priority: 'high',
   },
   {
@@ -47,15 +48,15 @@ const navLinks = [
     id: 6,
     title: 'SPA',
     url: '/spa',
-    demoImage:
-      'https://hotelmoonlight.com/assets/userfiles/images/spa2.jpg',
+    demoImage: 'https://hotelmoonlight.com/assets/userfiles/images/spa2.jpg',
     priority: 'high',
   },
   {
     id: 5,
     title: 'Contact us',
     url: '/contact',
-    demoImage: 'https://hotelmoonlight.com/images/gallery/galleryimages/sfcI4-e4.jpg',
+    demoImage:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/sfcI4-e4.jpg',
     priority: 'low',
   },
   {
@@ -70,14 +71,16 @@ const navLinks = [
     id: 7,
     title: 'Gallery',
     url: '/gallery',
-    demoImage: 'https://hotelmoonlight.com/images/gallery/galleryimages/6hgTT-r11.jpg',
+    demoImage:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/6hgTT-r11.jpg',
     priority: 'low',
   },
   {
     id: 8,
     title: 'CSR',
-    url: '/csr',
-    demoImage: 'https://hotelmoonlight.com/images/gallery/galleryimages/1PXk5-r8.jpg',
+    url: '/article/csr',
+    demoImage:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/1PXk5-r8.jpg',
     priority: 'low',
   },
 ];
@@ -130,20 +133,14 @@ const Navbar: React.FC = () => {
           href="/"
           className={`pointer-events-auto origin-top object-contain transition-all duration-[1s] ${
             visible ? '-translate-y-0' : '-translate-y-40 scale-50'
-          }`}
+          } ${window.scrollY === 0 ? 'bg-light' : 'filter-none'} `}
         >
-          <img
-            src={logo}
-            alt="logo"
-            className={`filter-white h-28 w-40 object-contain`}
-          />
+          <img src={logo} alt="logo" className={`h-28 w-40 object-contain`} />
         </a>
         <button
-          className={`group pointer-events-auto relative flex flex-col items-center justify-center transition-all duration-700 ease-linear ${
-            window.scrollY > 0
-              ? 'bg-white text-dark'
-              : 'bg-transparent text-white'
-          }`}
+          type="button"
+          aria-label="Menu"
+          className={`group pointer-events-auto relative flex flex-col items-center justify-center bg-light p-1 mix-blend-difference transition-all duration-700 ease-linear`}
           onClick={toggleNav}
         >
           <span className="px-2 text-xs font-light uppercase tracking-wide group-hover:animate-pulse">
