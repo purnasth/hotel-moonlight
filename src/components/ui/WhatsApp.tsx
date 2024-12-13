@@ -23,7 +23,7 @@ const WhatsApp: React.FC = () => {
 
   return (
     <Link
-      to="https://wa.me/+977-9851221636"
+      to="https://wa.me/+9779851221636"
       target="_blank"
       rel="noreferrer"
       className={`${
