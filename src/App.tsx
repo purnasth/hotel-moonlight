@@ -11,6 +11,8 @@ import Navbar from './layouts/Navbar';
 import WhatsApp from './components/ui/WhatsApp';
 import Footer from './layouts/Footer';
 import ArticlePage from './pages/ArticlePage';
+import Stay from './pages/Stay';
+import Gallery from './components/ui/Gallery';
 
 const App: React.FC = () => {
   return (
@@ -21,6 +23,8 @@ const App: React.FC = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/stay" element={<Stay />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/article/:slug" element={<ArticlePage />} />
         </Routes>
         <Footer />

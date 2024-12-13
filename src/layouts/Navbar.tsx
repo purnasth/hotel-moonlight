@@ -133,7 +133,7 @@ const Navbar: React.FC = () => {
           href="/"
           className={`pointer-events-auto origin-top object-contain transition-all duration-[1s] ${
             visible ? '-translate-y-0' : '-translate-y-40 scale-50'
-          } ${window.scrollY === 0 ? 'bg-light' : 'filter-none'} `}
+          } ${window.scrollY === 0 ? 'bg-light p-2' : 'filter-none'} `}
         >
           <img src={logo} alt="logo" className={`h-28 w-40 object-contain`} />
         </a>
