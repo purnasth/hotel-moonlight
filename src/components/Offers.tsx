@@ -31,7 +31,7 @@ const offersContent = [
 const Offers = () => {
   return (
     <>
-      <main>
+      <main className="bg-transparent">
         <h2 className="text-gradient max-w-4xl text-2xl font-medium md:text-4xl lg:text-6xl lg:leading-snug">
           {/* {offersData.title} */}
           Grab the Moonlight Offers before they are gone!

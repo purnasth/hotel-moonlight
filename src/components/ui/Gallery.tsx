@@ -142,7 +142,7 @@ const Gallery: React.FC = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-40 flex flex-wrap justify-center gap-4 bg-white p-4 md:p-6">
+      <div className="sticky top-0 z-40 flex flex-wrap justify-center gap-4 bg-light p-4 md:p-6">
         {categories.map((category) => (
           <button
             key={category}

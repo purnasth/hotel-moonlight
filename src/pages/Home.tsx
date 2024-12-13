@@ -17,7 +17,7 @@ const Home: React.FC = () => {
       <About />
       <Services />
       <Offers />
-      <main className="bg-white px-4">
+      <main className="px-4">
         <Gallery />
         <div className="item-center flex justify-center">
           <Link
