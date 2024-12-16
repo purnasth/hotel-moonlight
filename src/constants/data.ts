@@ -20,7 +20,7 @@ export const servicesContents = [
           "In the heart of Kathmandu's tourism hub, discover a tranquil haven filled with sincere Nepali hospitality with a comfortable stay",
         imageUrl: 'https://hotelmoonlight.com/images/subpackage/HOGxu-b4.jpg',
         category: 'accommodation',
-        router: '/accommodation',
+        router: '/stay',
       },
       {
         id: 'dine',
@@ -42,7 +42,7 @@ export const servicesContents = [
         imageUrl:
           'https://hotelmoonlight.com/assets/userfiles/images/Conferencehall.jpg',
         category: 'occasion',
-        router: '/occasion',
+        router: '/occasions',
       },
       {
         id: 'spa',

@@ -14,6 +14,7 @@ import ArticlePage from './pages/ArticlePage';
 import Gallery from './components/ui/Gallery';
 import PackageComponent from './pages/PackageComponent';
 import PromotionsPage from './pages/PromotionsPage';
+import ContactPage from './pages/ContactPage';
 
 const App: React.FC = () => {
   return (
@@ -27,6 +28,7 @@ const App: React.FC = () => {
           <Route path="/:slug" element={<PackageComponent />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/offers" element={<PromotionsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="/article/:slug" element={<ArticlePage />} />
         </Routes>
         <Footer />
