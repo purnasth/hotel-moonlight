@@ -15,6 +15,7 @@ import Gallery from './components/ui/Gallery';
 import PackageComponent from './pages/PackageComponent';
 import PromotionsPage from './pages/PromotionsPage';
 import ContactPage from './pages/ContactPage';
+import TawkToChat from './components/TawkToChat';
 
 const App: React.FC = () => {
   return (
@@ -32,6 +33,7 @@ const App: React.FC = () => {
           <Route path="/article/:slug" element={<ArticlePage />} />
         </Routes>
         <Footer />
+        <TawkToChat />
       </Router>
     </>
   );

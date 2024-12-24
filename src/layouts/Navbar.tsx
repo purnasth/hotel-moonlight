@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../assets/logo.png';
-import { TbMenu } from 'react-icons/tb';
-import { matchPath, NavLink, useLocation } from 'react-router-dom';
+// import { TbMenu } from 'react-icons/tb';
+import { Link, matchPath, NavLink, useLocation } from 'react-router-dom';
 import blueGradient from '../assets/pattern/blue-gradient.png';
+import { IoIosMenu } from 'react-icons/io';
 
 const navLinks = [
   {
@@ -137,17 +138,25 @@ const Navbar: React.FC = () => {
         >
           <img src={logo} alt="logo" className={`h-28 w-40 object-contain`} />
         </a>
-        <button
-          type="button"
-          aria-label="Menu"
-          className={`group pointer-events-auto relative flex flex-col items-center justify-center bg-light p-1 mix-blend-difference transition-all duration-700 ease-linear`}
-          onClick={toggleNav}
-        >
-          <span className="px-2 text-xs font-light uppercase tracking-wide group-hover:animate-pulse">
+        <div className="flex items-center gap-4">
+          <Link
+            to="#"
+            className="transition-300 pointer-events-auto flex items-center justify-center gap-1 border border-dark/30 bg-white px-4 py-1 text-dark hover:border-dark hover:bg-dark hover:text-light"
+          >
+            Book Now
+          </Link>
+          <button
+            type="button"
+            aria-label="Menu"
+            className="transition-300 pointer-events-auto flex items-center justify-center gap-1 border border-dark/30 bg-white px-1 py-0 text-dark hover:animate-pulse hover:text-light"
+            onClick={toggleNav}
+          >
+            {/* <span className="px-2 text-xs font-light uppercase tracking-wide group-hover:animate-pulse">
             Menu
-          </span>
-          <TbMenu className="-mt-1 origin-center scale-x-[2] text-2xl group-hover:animate-spin" />
-        </button>
+          </span> */}
+            <IoIosMenu className="origin-center bg-white p-1 text-3xl text-dark group-hover:animate-pulse" />
+          </button>
+        </div>
 
         {/* <button
             className={`visible relative flex flex-col items-center justify-center gap-2 p-2 text-light outline outline-1 outline-white/30 transition-all duration-700 ease-linear`}
