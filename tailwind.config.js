@@ -8,8 +8,14 @@ module.exports = {
         light: '#f8f8f8',
       },
       fontFamily: {
-        title: ['"Kaftan Serif"', 'Georgia', 'Cambria', 'serif'],
-        body: ['"Manrope"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        title: [
+          '"Gilda Display"',
+          'Playfair Display',
+          'Georgia',
+          'Cambria',
+          'serif',
+        ],
+        body: ['"Montserrat"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         inherit: 'inherit',

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../assets/logo.png';
 // import { TbMenu } from 'react-icons/tb';
-import { Link, matchPath, NavLink, useLocation } from 'react-router-dom';
+import { matchPath, NavLink, useLocation } from 'react-router-dom';
 import blueGradient from '../assets/pattern/blue-gradient.png';
 import { IoIosMenu } from 'react-icons/io';
+import Booking from '../components/ui/Booking';
 
 const navLinks = [
   {
@@ -139,12 +140,7 @@ const Navbar: React.FC = () => {
           <img src={logo} alt="logo" className={`h-28 w-40 object-contain`} />
         </a>
         <div className="flex items-center gap-4">
-          <Link
-            to="#"
-            className="transition-300 pointer-events-auto flex items-center justify-center gap-1 border border-dark/30 bg-white px-4 py-1 text-dark hover:border-dark hover:bg-dark hover:text-light"
-          >
-            Book Now
-          </Link>
+          <Booking className="transition-300 pointer-events-auto flex items-center justify-center gap-1 border border-dark/30 bg-white px-4 py-1 text-dark hover:border-dark hover:bg-dark hover:text-light" />
           <button
             type="button"
             aria-label="Menu"

@@ -11,11 +11,11 @@ import Navbar from './layouts/Navbar';
 import WhatsApp from './components/ui/WhatsApp';
 import Footer from './layouts/Footer';
 import ArticlePage from './pages/ArticlePage';
-import Gallery from './components/ui/Gallery';
 import PackageComponent from './pages/PackageComponent';
 import PromotionsPage from './pages/PromotionsPage';
 import ContactPage from './pages/ContactPage';
 import TawkToChat from './components/TawkToChat';
+import GalleryPage from './pages/GalleryPage';
 
 const App: React.FC = () => {
   return (
@@ -27,7 +27,7 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/:slug" element={<PackageComponent />} />
-          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/offers" element={<PromotionsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/article/:slug" element={<ArticlePage />} />

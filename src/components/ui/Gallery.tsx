@@ -142,14 +142,14 @@ const Gallery: React.FC = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-40 flex flex-wrap justify-center gap-4 bg-light p-4 md:p-6">
+      <div className="sticky top-0 z-40 flex flex-wrap justify-center gap-4 bg-light p-2 md:px-6">
         {categories.map((category) => (
           <button
             key={category}
             onClick={() => handleCategoryClick(category)}
             className={`${
               activeCategory === category ? 'text-gradient' : 'text-dark/50'
-            } transition-linear hover:text-custom-black hover:bg-custom-black/5 rounded-md px-1 py-2 font-title text-xs font-bold uppercase md:px-4 md:py-2 md:text-sm lg:text-base`}
+            } hidden transition-linear hover:text-custom-black hover:bg-custom-black/5 rounded-md px-1 py-2 font-title text-xs font-bold uppercase md:px-4 md:py-2 md:text-sm lg:text-base`}
           >
             {category}
           </button>

@@ -59,7 +59,7 @@
   h4,
   h5,
   h6 {
-    @apply font-title;
+    @apply font-title font-medium;
   }
 
   label,
