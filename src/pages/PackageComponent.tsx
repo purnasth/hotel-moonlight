@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Offers from '../components/Offers';
 import blueGradient from '../assets/pattern/blue-gradient.png';
 
@@ -293,9 +293,17 @@ const PackageComponent = () => {
                   className={`sticky top-16 max-h-fit ${index % 2 === 0 ? 'col-span-3' : 'order-2 col-span-3'}`}
                 >
                   <img src={imageUrl} alt="" />
-                  <h2 className="text-gradient mt-5 max-w-2xl font-title text-2xl font-semibold leading-snug">
-                    {heading}
-                  </h2>
+                  <div className="flex items-center justify-between">
+                    <h2 className="text-gradient mt-5 max-w-2xl font-title text-2xl font-semibold leading-snug">
+                      {heading}
+                    </h2>
+                    <Link
+                      to={`${packageContent.router}/${id}`}
+                      className="text-primary font-semibold"
+                    >
+                      View Details
+                    </Link>
+                  </div>
                 </div>
                 <div
                   className={`${index % 2 === 0 ? 'col-span-2' : 'order-1 col-span-2'}`}

@@ -104,10 +104,10 @@ const OffersEnquiry: React.FC<OffersEnquiryProps> = ({ offerTitle, onClose }) =>
             &#x2715;
           </button>
           <div className="space-y-2">
-            <h3 className="font-body text-xl font-bold">Enquiry Form</h3>
+            <h3 className="font-body text-xl font-medium">Enquiry Form</h3>
             <p>Send your information and query.</p>
           </div>
-          <h4 className="my-4 font-body text-xl font-bold">
+          <h4 className="my-4 font-body text-xl font-medium">
             {offerTitle || 'Special Offer'}
           </h4>
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -155,7 +155,7 @@ const OffersEnquiry: React.FC<OffersEnquiryProps> = ({ offerTitle, onClose }) =>
               type="submit"
               aria-label="Submit"
               title="Submit"
-              className={`transition-300 group mt-4 flex items-center gap-2 rounded-full border border-orange-300 bg-orange-300 px-5 py-2 font-semibold hover:bg-orange-200/80 hover:text-orange-500 ${
+              className={`transition-300 group mt-4 flex items-center gap-2 bg-gradient px-5 py-2 font-semibold text-light ${
                 isSubmitting ? 'cursor-not-allowed opacity-75' : ''
               }`}
               disabled={isSubmitting}

@@ -83,10 +83,10 @@ const TestimonialSlider: React.FC = () => {
       >
         {testimonialsContent.map((content, index) => (
           <SwiperSlide key={index} className="flex flex-col items-center">
-            <p className="review text-justify text-sm text-white sm:text-base md:text-justify">
+            <p className="review text-justify text-sm text-white sm:text-base md:text-justify leading-loose font-light">
               {content.review}
             </p>
-            <div className="mt-6 flex items-center justify-center gap-3">
+            <div className="mt-12 flex items-center justify-center gap-3">
               <img
                 src={content.sourceImage}
                 alt={content.author}
@@ -100,7 +100,7 @@ const TestimonialSlider: React.FC = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="z-10 mt-5 flex items-center justify-center gap-5">
+      <div className="z-10 mt-16 flex items-center justify-center gap-5">
         <button
           className="transition-300 rounded-full border px-5 py-1 shadow backdrop-blur hover:opacity-50"
           onClick={handlePrev}

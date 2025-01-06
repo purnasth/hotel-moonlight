@@ -1,5 +1,6 @@
 import offers from '../assets/offers.png';
 import bookingAward from '../assets/bookingAwards.jpg';
+import { Link } from 'react-router-dom';
 
 const offersContent = [
   {
@@ -32,10 +33,16 @@ const Offers = () => {
   return (
     <>
       <main className="bg-transparent">
-        <h2 className="text-gradient max-w-4xl text-2xl font-medium md:text-4xl lg:text-6xl lg:leading-snug">
+        <h2 className="text-gradient mb-6 max-w-4xl text-2xl font-medium md:text-4xl lg:text-6xl lg:leading-snug">
           {/* {offersData.title} */}
           Grab the Moonlight Offers before they are gone!
         </h2>
+        <Link
+          to="/offers"
+          className="bg-gradient px-6 py-3 font-semibold text-light"
+        >
+          View all offers
+        </Link>
 
         <div className="mt-16 grid grid-cols-3 gap-16">
           {offersContent.map((offer) => (

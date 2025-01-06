@@ -11,9 +11,9 @@ const Services = () => {
   const duration = '700';
   return (
     <>
-      <main className="bg-dark">
+      <main className="bg-primary">
         <div
-          className="pointer-events-none absolute inset-0 -z-10 size-full select-none bg-cover bg-center bg-no-repeat"
+          className="pointer-events-none absolute inset-0 -z-10 size-full select-none bg-cover bg-center bg-no-repeat mix-blend-screen opacity-80"
           style={{ backgroundImage: `url(${blueGradient})` }}
           aria-hidden="true"
         />
@@ -43,7 +43,7 @@ const Services = () => {
                   className={`flex w-full items-center justify-between gap-10 px-4 py-12 transition-all md:w-2/3 md:p-12 duration-${duration} md:group-hover:translate-x-4`}
                 >
                   <div className="flex flex-col items-start gap-2 md:gap-5">
-                    <h4 className="text-gradient text-2xl capitalize md:text-4xl">
+                    <h4 className="text-gradient text-2xl capitalize md:text-4xl font-semibold">
                       {suite.title}
                     </h4>
                     <p className="line-clamp-2 max-w-md text-sm opacity-80">

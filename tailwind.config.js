@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         dark: '#111111',
         light: '#f8f8f8',
+        primary: '#033853',
       },
       fontFamily: {
         title: [

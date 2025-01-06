@@ -12,6 +12,7 @@ const enquiryForm = [
   { name: 'fullName', type: 'text', label: 'Full Name', required: true },
   { name: 'email', type: 'email', label: 'Email', required: true },
   { name: 'phoneNumber', type: 'text', label: 'Phone Number', required: true },
+  { name: 'subject', type: 'text', label: 'Subject', required: true },
   { name: 'message', type: 'textarea', label: 'Message', required: true },
 ];
 
@@ -20,6 +21,7 @@ const schema = yup.object().shape({
   fullName: yup.string().required('Enter your full name*'),
   email: yup.string().email('Invalid email').required('Enter your email*'),
   phoneNumber: yup.string().required('Enter your phone number*'),
+  subject: yup.string().required('Enter your subject*'),
   message: yup.string().required('Enter your message*'),
 });
 
@@ -28,6 +30,7 @@ interface FormData {
   fullName: string;
   email: string;
   phoneNumber: string;
+  subject: string;
   message: string;
 }
 
@@ -66,9 +69,7 @@ const ContactForm: React.FC = ({}) => {
 
   return (
     <>
-      <div
-        className={`transition-700 relative w-full max-w-xl transform`}
-      >
+      <div className={`transition-700 relative w-full max-w-xl transform`}>
         {/* <div className="space-y-2">
           <h3 className="font-body text-xl font-bold">Enquiry Form</h3>
           <p>Send your information and query.</p>
@@ -118,7 +119,7 @@ const ContactForm: React.FC = ({}) => {
             type="submit"
             aria-label="Submit"
             title="Submit"
-            className={`transition-300 border-primary bg-gradient h group mt-4 flex items-center gap-2 border px-6 py-2 font-semibold text-light ${
+            className={`transition-300 bg-gradient h group mt-4 flex items-center gap-2 border border-primary px-6 py-2 font-semibold text-light ${
               isSubmitting ? 'cursor-not-allowed opacity-75' : ''
             }`}
             disabled={isSubmitting}
