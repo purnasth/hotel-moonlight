@@ -134,6 +134,14 @@
   .overlay {
     @apply pointer-events-none absolute inset-0 z-0 bg-black/20;
   }
+
+  .ul:hover .li {
+    @apply transition-1000 opacity-90 blur-[5px];
+  }
+
+  .ul .li:hover {
+    @apply transition-1000 opacity-100 blur-0;
+  }
 }
 
 /* lenis */
@@ -157,3 +165,7 @@ html.lenis body {
 .lenis.lenis-smooth iframe {
   pointer-events: none;
 }
+
+/* .ul:hover .li > :not(:hover) {
+  @apply opacity-90 blur-[5px] transition-1000;
+} */
