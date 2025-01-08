@@ -5,7 +5,6 @@ import * as yup from 'yup';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ReCAPTCHA from 'react-google-recaptcha';
-import { submitForm } from '../../utils/api';
 
 // Define form fields
 const enquiryForm = [
@@ -51,16 +50,13 @@ const ContactForm: React.FC = ({}) => {
       return;
     }
 
-    try {
-      await submitForm('/enquiry.php', {
-        ...data,
-        recaptchaToken,
-      });
-      toast.success('Form submitted successfully!');
-    } catch (error) {
-      const errorMessage = (error as Error).message || 'An error occurred.';
-      toast.error(errorMessage);
-    }
+    const whatsappNumber = '+9779808021753';
+    const message = `Full Name: ${data.fullName}\nEmail: ${data.email}\nPhone Number: ${data.phoneNumber}\nSubject: ${data.subject}\nMessage: ${data.message}`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+    // Redirect to WhatsApp with the message
+    window.location.href = whatsappURL;
   };
 
   const handleRecaptchaChange = (token: string | null) => {
@@ -86,7 +82,7 @@ const ContactForm: React.FC = ({}) => {
                   {...register(input.name as keyof FormData)}
                   rows={2}
                   id={input.name}
-                  className={`w-full rounded-none border-b border-dark/30 bg-transparent py-0 text-base font-normal text-dark focus:border-dark focus:outline-none sm:py-2 md:text-base ${
+                  className={`w-full rounded-none border-b border-dark/30 bg-transparent py-0 text-base font-medium text-dark focus:border-dark focus:outline-none sm:py-2 md:text-base ${
                     errors[input.name as keyof FormData]
                       ? 'border-red-500'
                       : 'border-gray-200'
@@ -97,7 +93,7 @@ const ContactForm: React.FC = ({}) => {
                   {...register(input.name as keyof FormData)}
                   type={input.type}
                   id={input.name}
-                  className={`w-full rounded-none border-b border-dark/40 bg-transparent py-0 text-base font-normal text-dark focus:border-dark focus:outline-none sm:py-2 md:text-base ${
+                  className={`w-full rounded-none border-b border-dark/40 bg-transparent py-0 text-base font-medium text-dark focus:border-dark focus:outline-none sm:py-2 md:text-base ${
                     errors[input.name as keyof FormData]
                       ? 'border-red-500'
                       : 'border-gray-200'

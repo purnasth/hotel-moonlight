@@ -1,12 +1,11 @@
 import { Link, useParams } from 'react-router-dom';
-import Offers from '../components/Offers';
-import blueGradient from '../assets/pattern/blue-gradient.png';
 
 interface PackageContent {
   id: string;
   title: string;
   description: string;
   imageUrl: string;
+  booking: string;
   router: string;
   packages: Package[];
 }
@@ -30,6 +29,7 @@ const packageContents: Record<string, PackageContent> = {
       'Stay in our luxurious rooms and enjoy the ultimate comfort and relaxation.',
     imageUrl: 'https://hotelmoonlight.com/images/subpackage/HOGxu-b4.jpg',
     router: '/stay',
+    booking: '/contact',
     packages: [
       {
         id: 'boutique-room',
@@ -98,6 +98,7 @@ const packageContents: Record<string, PackageContent> = {
       'Stay in our luxurious rooms and enjoy the ultimate comfort and relaxation.',
     imageUrl: 'https://hotelmoonlight.com/assets/userfiles/images/garden.jpg',
     router: '/dine',
+    booking: '/contact',
     packages: [
       {
         id: 'juneli-restaurant',
@@ -177,6 +178,7 @@ const packageContents: Record<string, PackageContent> = {
     imageUrl:
       'https://hotelmoonlight.com/assets/userfiles/images/Conferencehall.jpg',
     router: '/occasion',
+    booking: '/contact',
     packages: [
       {
         id: 'atithi-hall',
@@ -222,6 +224,7 @@ const packageContents: Record<string, PackageContent> = {
       'Stay in our luxurious rooms and enjoy the ultimate comfort and relaxation.',
     imageUrl: 'https://hotelmoonlight.com/assets/userfiles/images/spa2.jpg',
     router: '/spa',
+    booking: '/contact',
     packages: [
       {
         id: 'spa-treatments',
@@ -293,15 +296,15 @@ const PackageComponent = () => {
                   className={`sticky top-16 max-h-fit ${index % 2 === 0 ? 'col-span-3' : 'order-2 col-span-3'}`}
                 >
                   <img src={imageUrl} alt="" />
-                  <div className="flex items-center justify-between">
-                    <h2 className="text-gradient mt-5 max-w-2xl font-title text-2xl font-semibold leading-snug">
+                  <div className="mt-5 flex items-center justify-between">
+                    <h2 className="text-gradient max-w-2xl font-title text-2xl font-semibold leading-snug">
                       {heading}
                     </h2>
                     <Link
-                      to={`${packageContent.router}/${id}`}
-                      className="text-primary font-semibold"
+                      to={`${packageContent.booking}`}
+                      className="transition-300 font-semibold underline underline-offset-4 hover:underline-offset-0"
                     >
-                      View Details
+                      Reserve Now
                     </Link>
                   </div>
                 </div>
@@ -348,14 +351,14 @@ const PackageComponent = () => {
           })}
         </section>
       </main>
-      <section className="relative border-t border-cyan-600 bg-white">
+      {/* <section className="relative border-t border-cyan-600 bg-white">
         <div
           className="pointer-events-none absolute inset-0 -z-10 size-full select-none bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${blueGradient})` }}
           aria-hidden="true"
         />
         <Offers />
-      </section>
+      </section> */}
     </>
   );
 };

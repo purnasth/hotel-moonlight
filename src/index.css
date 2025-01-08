@@ -69,7 +69,7 @@
   button,
   ul,
   li {
-    @apply font-body font-light;
+    @apply font-body font-normal;
   }
 
   div,
