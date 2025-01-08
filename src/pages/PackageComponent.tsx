@@ -1,4 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
+import MasterSlider from '../layouts/MasterSlider';
 
 interface PackageContent {
   id: string;
@@ -10,12 +11,19 @@ interface PackageContent {
   packages: Package[];
 }
 
+interface Slide {
+  image: string;
+  title?: string;
+  description?: string;
+}
+
 interface Package {
   id: string;
   title: string;
   heading: string;
   description: string;
   imageUrl: string;
+  slides: Slide[];
   highlights: string[];
   amenities: string[];
   htmlContent: string;
@@ -29,7 +37,7 @@ const packageContents: Record<string, PackageContent> = {
       'Stay in our luxurious rooms and enjoy the ultimate comfort and relaxation.',
     imageUrl: 'https://hotelmoonlight.com/images/subpackage/HOGxu-b4.jpg',
     router: '/stay',
-    booking: '/contact',
+    booking: '/contact#form',
     packages: [
       {
         id: 'boutique-room',
@@ -38,6 +46,28 @@ const packageContents: Record<string, PackageContent> = {
         description:
           'Each Boutique Room has a refined interior design that includes a taste of our culture. Newari style hardwood flooring and beams, with a gentle Tibetan cloud feeling in the ceiling. Traditional yes, yet with all the facilities you expect when starting or completing your trip in Nepal.',
         imageUrl: 'https://hotelmoonlight.com/images/subpackage/HOGxu-b4.jpg',
+        slides: [
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/Nk7Bq-slide1.jpg',
+            title: 'Welcome to Hotel Moonlight',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/2WkOb-slide2.jpg',
+            title: 'Indulge in the luxury of our rooms',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/egdfB-slider3.jpg',
+            title: 'Taste the best of Nepali cuisine',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/r09zz-slide3.jpg',
+            title: 'Wellness and relaxation',
+          },
+        ],
         highlights: [
           '23 Boutique Rooms',
           'Double, Twin, Triple or Family rooms',
@@ -67,6 +97,28 @@ const packageContents: Record<string, PackageContent> = {
         description:
           'Each Deluxe Room has a refined interior design that includes a taste of our culture. Newari style hardwood flooring and beams, with a gentle Tibetan cloud feeling in the ceiling. Traditional yes, yet with all the facilities you expect when starting or completing your trip in Nepal.',
         imageUrl: 'https://hotelmoonlight.com/images/subpackage/HOGxu-b4.jpg',
+        slides: [
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/Nk7Bq-slide1.jpg',
+            title: 'Welcome to Hotel Moonlight',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/2WkOb-slide2.jpg',
+            title: 'Indulge in the luxury of our rooms',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/egdfB-slider3.jpg',
+            title: 'Taste the best of Nepali cuisine',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/r09zz-slide3.jpg',
+            title: 'Wellness and relaxation',
+          },
+        ],
         highlights: [
           '43 Deluxe Rooms',
           'Double, Twin, Triple or Family rooms',
@@ -98,7 +150,7 @@ const packageContents: Record<string, PackageContent> = {
       'Stay in our luxurious rooms and enjoy the ultimate comfort and relaxation.',
     imageUrl: 'https://hotelmoonlight.com/assets/userfiles/images/garden.jpg',
     router: '/dine',
-    booking: '/contact',
+    booking: '/contact#form',
     packages: [
       {
         id: 'juneli-restaurant',
@@ -108,6 +160,28 @@ const packageContents: Record<string, PackageContent> = {
           'We offer dining in the Juneli Restaurant, in The PALM TREE Garden, at our Over the Moon Rooftop Lounge, and outside on The Rooftop itself. Groups/seminars may choose to dine in the Atithi Conference Hall. The Juneli Bar is a popular ‘watering hole’, offering a wide range of alcoholic and non-alcoholic drinks, with its own seating area. The Barista Coffee Shop is conveniently placed at the entrance to the restaurant, serving coffee, a selection of teas, fruit juices and bakery items.',
         imageUrl:
           'https://hotelmoonlight.com/assets/userfiles/images/rooftop.jpg',
+        slides: [
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/Nk7Bq-slide1.jpg',
+            title: 'Welcome to Hotel Moonlight',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/2WkOb-slide2.jpg',
+            title: 'Indulge in the luxury of our rooms',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/egdfB-slider3.jpg',
+            title: 'Taste the best of Nepali cuisine',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/r09zz-slide3.jpg',
+            title: 'Wellness and relaxation',
+          },
+        ],
         highlights: [
           'Asian, Indian, Chinese & Western Cuisine',
           'Juneli Bar & Barista Coffee Shop',
@@ -142,6 +216,28 @@ const packageContents: Record<string, PackageContent> = {
           'The Palm Garden is a beautiful garden restaurant located in the heart of the city. The restaurant offers a wide range of dishes from around the world, including Asian, Indian, Chinese, and Western cuisine. The Palm Garden is the perfect place to relax and enjoy a delicious meal with friends and family.',
         imageUrl:
           'https://hotelmoonlight.com/assets/userfiles/images/garden.jpg',
+        slides: [
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/Nk7Bq-slide1.jpg',
+            title: 'Welcome to Hotel Moonlight',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/2WkOb-slide2.jpg',
+            title: 'Indulge in the luxury of our rooms',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/egdfB-slider3.jpg',
+            title: 'Taste the best of Nepali cuisine',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/r09zz-slide3.jpg',
+            title: 'Wellness and relaxation',
+          },
+        ],
         highlights: [
           'Asian, Indian, Chinese & Western Cuisine',
           'Juneli Bar & Barista Coffee Shop',
@@ -178,7 +274,7 @@ const packageContents: Record<string, PackageContent> = {
     imageUrl:
       'https://hotelmoonlight.com/assets/userfiles/images/Conferencehall.jpg',
     router: '/occasion',
-    booking: '/contact',
+    booking: '/contact#form',
     packages: [
       {
         id: 'atithi-hall',
@@ -188,6 +284,28 @@ const packageContents: Record<string, PackageContent> = {
           'The Atithi Conference Hall is the perfect venue for your next event. Whether you are planning a wedding, birthday party, or corporate event, our team will work with you to create a memorable experience for you and your guests. Our hall is equipped with state-of-the-art audiovisual equipment, comfortable seating, and a dedicated team of staff to ensure that your event is a success.',
         imageUrl:
           'https://hotelmoonlight.com/images/gallery/galleryimages/TGsxU-h9.jpg',
+        slides: [
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/Nk7Bq-slide1.jpg',
+            title: 'Welcome to Hotel Moonlight',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/2WkOb-slide2.jpg',
+            title: 'Indulge in the luxury of our rooms',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/egdfB-slider3.jpg',
+            title: 'Taste the best of Nepali cuisine',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/r09zz-slide3.jpg',
+            title: 'Wellness and relaxation',
+          },
+        ],
         highlights: [
           'Atithi Conference Hall',
           'Wedding',
@@ -224,7 +342,7 @@ const packageContents: Record<string, PackageContent> = {
       'Stay in our luxurious rooms and enjoy the ultimate comfort and relaxation.',
     imageUrl: 'https://hotelmoonlight.com/assets/userfiles/images/spa2.jpg',
     router: '/spa',
-    booking: '/contact',
+    booking: '/contact#form',
     packages: [
       {
         id: 'spa-treatments',
@@ -233,6 +351,28 @@ const packageContents: Record<string, PackageContent> = {
         description:
           'Our spa treatments are designed to help you relax and rejuvenate your body, mind, and soul. Whether you are looking for a traditional massage or a modern treatment, our team of professional therapists will help you find the perfect treatment for your needs. Our spa is equipped with state-of-the-art facilities and offers a range of treatments to help you feel your best.',
         imageUrl: 'https://hotelmoonlight.com/assets/userfiles/images/spa2.jpg',
+        slides: [
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/Nk7Bq-slide1.jpg',
+            title: 'Welcome to Hotel Moonlight',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/2WkOb-slide2.jpg',
+            title: 'Indulge in the luxury of our rooms',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/egdfB-slider3.jpg',
+            title: 'Taste the best of Nepali cuisine',
+          },
+          {
+            image:
+              'https://hotelmoonlight.com/images/slideshow/r09zz-slide3.jpg',
+            title: 'Wellness and relaxation',
+          },
+        ],
         highlights: ['Spa Treatments', 'Massage', 'Facials', 'Body Treatments'],
         amenities: [
           'massage therapy',
@@ -282,21 +422,24 @@ const PackageComponent = () => {
             const {
               id,
               title,
-              heading,
               description,
-              imageUrl,
+              slides,
               highlights,
               amenities,
               htmlContent,
             } = pkg;
 
             return (
-              <div key={id} className="grid grid-cols-5 gap-12">
+              <div key={id} className="">
                 <div
-                  className={`sticky top-16 max-h-fit ${index % 2 === 0 ? 'col-span-3' : 'order-2 col-span-3'}`}
+                // className={`sticky top-16 max-h-fit ${index % 2 === 0 ? 'col-span-3' : 'order-2 col-span-3'}`}
                 >
-                  <img src={imageUrl} alt="" />
-                  <div className="mt-5 flex items-center justify-between">
+                  <MasterSlider
+                    slides={slides}
+                    hasContent={true}
+                    sizeClassName="relative flex h-80 md:h-[50vh] lg:h-[110vh] items-center justify-center"
+                  />
+                  {/* <div className="mt-5 flex items-center justify-between">
                     <h2 className="text-gradient max-w-2xl font-title text-2xl font-semibold leading-snug">
                       {heading}
                     </h2>
@@ -306,14 +449,22 @@ const PackageComponent = () => {
                     >
                       Reserve Now
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
                 <div
                   className={`${index % 2 === 0 ? 'col-span-2' : 'order-1 col-span-2'}`}
                 >
-                  <h2 className="text-gradient text-2xl font-medium md:text-4xl lg:text-5xl lg:leading-snug">
-                    {title}
-                  </h2>
+                  <div className="mt-12 flex items-center justify-between">
+                    <h2 className="text-gradient text-2xl font-medium md:text-4xl lg:text-5xl lg:leading-snug">
+                      {title}
+                    </h2>
+                    <Link
+                      to={`${packageContent.booking}`}
+                      className="transition-300 font-semibold underline underline-offset-4 hover:underline-offset-0"
+                    >
+                      Reserve Now
+                    </Link>
+                  </div>
                   <p className="mt-5 text-dark">{description}</p>
                   <ul className="mt-12 flex flex-wrap items-center gap-4">
                     {highlights.map((highlight) => (
@@ -342,7 +493,7 @@ const PackageComponent = () => {
                     ))}
                   </ul>
 
-                  <div className="room-rates">
+                  <div className="room-rates max-w-2xl">
                     <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
                   </div>
                 </div>

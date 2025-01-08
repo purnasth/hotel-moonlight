@@ -56,7 +56,11 @@ const About = () => {
             className="size-full min-h-[28.75rem]"
           ></iframe> */}
 
-        <MasterSlider slides={sliderImages} hasContent={true} />
+        <MasterSlider
+          slides={sliderImages}
+          hasContent={true}
+          sizeClassName="relative flex h-80 md:h-[50vh] lg:h-[110vh] items-center justify-center"
+        />
       </div>
     </main>
   );

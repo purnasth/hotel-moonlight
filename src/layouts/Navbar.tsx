@@ -85,6 +85,14 @@ const navLinks = [
       'https://hotelmoonlight.com/images/gallery/galleryimages/1PXk5-r8.jpg',
     priority: 'low',
   },
+  {
+    id: 9,
+    title: 'Facilities',
+    url: '/facilities',
+    demoImage:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/1PXk5-r8.jpg',
+    priority: 'low',
+  },
 ];
 
 const Navbar: React.FC = () => {
@@ -140,7 +148,7 @@ const Navbar: React.FC = () => {
           <img src={logo} alt="logo" className={`h-28 w-40 object-contain`} />
         </a>
         <div className="flex items-center gap-4">
-          <Booking className="transition-300 pointer-events-auto flex items-center justify-center gap-1 border border-dark/30 bg-white px-4 py-1 text-dark hover:border-dark hover:bg-dark hover:text-light" />
+          <Booking className="transition-300 pointer-events-auto flex items-center justify-center gap-1 border border-dark/30 bg-white px-4 py-1 text-primary hover:border-primary hover:bg-primary hover:text-light" />
           <button
             type="button"
             aria-label="Menu"

@@ -1,7 +1,7 @@
 import React from 'react';
 import Services from '../components/ui/Services';
 // import DemoService from '../components/ui/DemoService';
-import HighlightReview from '../components/ui/HighlightReview';
+// import HighlightReview from '../components/ui/HighlightReview';
 import About from '../components/About';
 import Offers from '../components/Offers';
 import Gallery from '../components/ui/Gallery';
@@ -23,7 +23,7 @@ const Home: React.FC = () => {
         </div>
       </main>
       {/* <DemoService /> */}
-      <HighlightReview />
+      {/* <HighlightReview /> */}
     </>
   );
 };

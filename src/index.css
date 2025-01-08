@@ -9,7 +9,7 @@
 
 @layer components {
   ::selection {
-    @apply bg-dark text-light;
+    @apply bg-primary text-light;
   }
 
   /* * {
