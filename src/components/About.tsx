@@ -57,13 +57,13 @@ const About = () => {
       <div className="container space-y-8 text-center">
         <h2 className="text-3xl">Athithi Devo Bhava</h2>
 
-        <h3 className="text-gradient text-6xl leading-snug">
+        <h3 className="text-gradient leading-snug text-2xl md:text-4xl lg:text-6xl lg:leading-snug">
           The Hotel Moonlight is more than 'bricks & stones', it's about our
           people & our guests.
         </h3>
       </div>
 
-      <div className="col-span-2 mt-24">
+      <div className="col-span-2 mt-12 md:mt-24">
         {/* <iframe
             src="https://www.youtube.com/embed/_jfHeaH6Xwk"
             title="Hotel moonlight | Kathmandu Hotels | Thamel Hotel | Hotel Promo Video | Longtail e-media"
@@ -74,7 +74,7 @@ const About = () => {
         <MasterSlider
           slides={sliderImages}
           hasContent={true}
-          sizeClassName="relative flex h-80 md:h-[50vh] lg:h-[110vh] items-center justify-center"
+          sizeClassName="relative flex h-80 md:h-[50vh] xl:h-[110vh] items-center justify-center"
         />
       </div>
     </main>

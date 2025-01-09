@@ -27,8 +27,8 @@ const Footer = () => {
           style={{ backgroundImage: `url(${blueGradient})` }}
           aria-hidden="true"
         />
-        <div className="container">
-          <div className="grid grid-cols-3 gap-8">
+        <div className="xl:container">
+          <div className="grid grid-cols-1 gap-y-12 md:grid-cols-3 md:gap-8">
             <div className="col-span-1">
               {/* <Link to="/">
                 <img
@@ -38,15 +38,13 @@ const Footer = () => {
                 />
               </Link> */}
               <div className="flex origin-center flex-col gap-8">
-                <h4 className="mb-10 text-4xl">
-                  Contact Us
-                </h4>
+                <h4 className="text-3xl md:mb-10 md:text-4xl">Contact Us</h4>
                 <ContactAndSocial />
               </div>
             </div>
 
             <div className="col-span-2">
-              <h4 className="mb-16 text-center text-4xl">
+              <h4 className="text-3xl md:mb-16 md:text-center md:text-4xl">
                 Valued Guests Feedback
               </h4>
               <TestimonialSlider />
@@ -79,9 +77,9 @@ const Footer = () => {
             </div>
           </div> */}
 
-          <p className="text-left text-sm">
+          <p className="mt-12 text-left text-sm lg:mt-20">
             &copy; {year} Hotel Moonlight. All rights reserved. Developed by
-            <Link to="https://longtail.info" className="ml-1 font-bold">
+            <Link to="https://longtail.info" className="ml-1">
               Longtail e-Media
             </Link>
             .

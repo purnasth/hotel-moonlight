@@ -39,12 +39,12 @@ const Offers = () => {
         </h2>
         <Link
           to="/offers"
-          className="bg-gradient px-6 py-3 font-semibold text-light"
+          className="bg-gradient px-6 py-3 tracking-wide text-light"
         >
           View all offers
         </Link>
 
-        <div className="mt-16 grid grid-cols-3 gap-16">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-16">
           {offersContent.map((offer) => (
             <div key={offer.id}>
               <img

@@ -159,7 +159,7 @@ const Gallery: React.FC = () => {
         <LightGallery
           plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen]}
           mode="lg-fade"
-          elementClassNames={`w-full columns-3 sm:columns-2 lg:columns-3 xl:columns-4 gap-2 md:gap-4 transition-linear scroll-mt-64 ${
+          elementClassNames={`w-full columns-1 sm:columns-2 lg:columns-2 xl:columns-4 gap-4 md:gap-4 transition-linear scroll-mt-64 ${
             isTransitioning ? 'translate-y-1/2' : 'translate-y-0'
           }`}
           thumbnail={true}
@@ -168,7 +168,7 @@ const Gallery: React.FC = () => {
           {filteredImages.map((image) => (
             <div
               key={image.id}
-              className={`gallery-item group mb-2 origin-center overflow-hidden transition-all duration-300 ease-linear md:mb-4 ${
+              className={`gallery-item group mb-4 origin-center overflow-hidden transition-all duration-300 ease-linear md:mb-4 ${
                 isTransitioning ? 'scale-0' : 'scale-100'
               }`}
               data-src={image.url}

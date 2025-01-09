@@ -7,8 +7,8 @@ const ContactPage = () => {
   return (
     <>
       <main>
-        <div className="container grid grid-cols-2">
-          <div className="mb-24 space-y-8">
+        <div className="container grid grid-cols-1 md:grid-cols-2">
+          <div className="my-12 xl:my-0 mb-24 space-y-8">
             <h4 className="text-5xl font-medium">Hotel Moonlight</h4>
             <p className="mt-2 max-w-md text-sm">
               We offer a range of services to make your stay more enjoyable.

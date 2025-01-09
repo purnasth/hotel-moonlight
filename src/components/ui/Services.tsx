@@ -110,26 +110,26 @@ import { HiArrowLongRight } from 'react-icons/hi2';
 
 const Services = () => {
   const imgClasses = [
-    'h-[65vh] w-full object-cover',
-    'h-[65vh] w-[28rem] object-cover',
-    'h-[65vh] w-[28rem] object-cover',
-    'h-[65vh] w-full object-cover',
+    'w-full h-72 sm:h-[40vh] sm:min-h-96 xl:h-[65vh] object-cover',
+    'w-full h-72 sm:h-[40vh] sm:min-h-96 xl:h-[65vh] lg:w-[28rem] object-cover',
+    'w-full h-72 sm:h-[40vh] sm:min-h-96 xl:h-[65vh] lg:w-[28rem] object-cover',
+    'w-full h-72 sm:h-[40vh] sm:min-h-96 xl:h-[65vh] object-cover',
   ];
 
   const containerClasses = [
     'relative content-end',
-    '-translate-y-24 content-end mr-auto',
-    'ml-auto',
-    '-translate-y-24 content-end',
+    'lg:-translate-y-24 content-end lg:mr-auto',
+    'lg:ml-auto',
+    'lg:-translate-y-24 content-end',
   ];
 
   return (
     <main>
-      <div className="container mx-auto w-4/5">
+      <div className="container mx-auto w-full xl:w-4/5">
         <h2 className="text-gradient max-w-4xl text-2xl font-medium md:text-4xl lg:text-6xl lg:leading-snug">
           {servicesContents[0].title}
         </h2>
-        <div className="ul mt-16 grid origin-center grid-cols-2 content-center gap-16 gap-y-8">
+        <div className="ul mt-8 grid origin-center grid-cols-1 content-center gap-16 gap-y-8 md:mt-24 md:grid-cols-2">
           {servicesContents[0].accomodation.map((service, index) => {
             const imgClass = imgClasses[index % imgClasses.length];
             const containerClass =

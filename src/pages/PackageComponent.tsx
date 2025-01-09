@@ -109,7 +109,7 @@ const packageContents: Record<string, PackageContent> = {
           'complementary mineral water',
         ],
         htmlContent:
-          '<h4 class="mt-16 font-body text-xl font-bold">Room Rates:</h4><table class="mt-8 w-full table-auto border-collapse border border-gray-300"><thead><tr class="bg-gray-200"><th class="border border-gray-300 px-4 py-2 text-sm">Room Plan</th><th class="border border-gray-300 px-4 py-2 text-sm">1 Pax./Night</th><th class="border border-gray-300 px-4 py-2 text-sm">2 Pax./Night</th><th class="border border-gray-300 px-4 py-2 text-sm">Extra Bed</th></tr></thead><tbody><tr class="odd:bg-white"><td class="border border-gray-300 px-4 py-2 text-sm">EP plan</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 85</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 95</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 20</td></tr><tr class="even:bg-gray-100"><td class="border border-gray-300 px-4 py-2 text-sm">BB plan</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 110</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 120</td><td class="border border-gray-300 px-4 py-2 text-sm"></td></tr></tbody></table>',
+          '<h4 class="mt-16 font-body text-xl">Room Rates:</h4><table class="mt-8 w-full table-auto border-collapse border border-gray-300"><thead><tr class="bg-gray-200"><th class="border border-gray-300 px-4 py-2 text-sm">Room Plan</th><th class="border border-gray-300 px-4 py-2 text-sm">1 Pax./Night</th><th class="border border-gray-300 px-4 py-2 text-sm">2 Pax./Night</th><th class="border border-gray-300 px-4 py-2 text-sm">Extra Bed</th></tr></thead><tbody><tr class="odd:bg-white"><td class="border border-gray-300 px-4 py-2 text-sm">EP plan</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 85</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 95</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 20</td></tr><tr class="even:bg-gray-100"><td class="border border-gray-300 px-4 py-2 text-sm">BB plan</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 110</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 120</td><td class="border border-gray-300 px-4 py-2 text-sm"></td></tr></tbody></table>',
       },
       {
         id: 'deluxe-room',
@@ -156,7 +156,7 @@ const packageContents: Record<string, PackageContent> = {
           'complementary mineral water',
         ],
         htmlContent:
-          '<h4 class="mt-16 font-body text-xl font-bold">Room Rates:</h4><table class="mt-8 w-full table-auto border-collapse border border-gray-300"><thead><tr class="bg-gray-200"><th class="border border-gray-300 px-4 py-2 text-sm">Room Plan</th><th class="border border-gray-300 px-4 py-2 text-sm">1 Pax./Night</th><th class="border border-gray-300 px-4 py-2 text-sm">2 Pax./Night</th><th class="border border-gray-300 px-4 py-2 text-sm">Extra Bed</th></tr></thead><tbody><tr class="odd:bg-white"><td class="border border-gray-300 px-4 py-2 text-sm">EP plan</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 65</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 75</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 20</td></tr><tr class="even:bg-gray-100"><td class="border border-gray-300 px-4 py-2 text-sm">BB plan</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 75</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 85</td><td class="border border-gray-300 px-4 py-2 text-sm"></td></tr></tbody></table>',
+          '<h4 class="mt-16 font-body text-xl">Room Rates:</h4><table class="mt-8 w-full table-auto border-collapse border border-gray-300"><thead><tr class="bg-gray-200"><th class="border border-gray-300 px-4 py-2 text-sm">Room Plan</th><th class="border border-gray-300 px-4 py-2 text-sm">1 Pax./Night</th><th class="border border-gray-300 px-4 py-2 text-sm">2 Pax./Night</th><th class="border border-gray-300 px-4 py-2 text-sm">Extra Bed</th></tr></thead><tbody><tr class="odd:bg-white"><td class="border border-gray-300 px-4 py-2 text-sm">EP plan</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 65</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 75</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 20</td></tr><tr class="even:bg-gray-100"><td class="border border-gray-300 px-4 py-2 text-sm">BB plan</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 75</td><td class="border border-gray-300 px-4 py-2 text-sm">USD 85</td><td class="border border-gray-300 px-4 py-2 text-sm"></td></tr></tbody></table>',
       },
     ],
   },
@@ -320,7 +320,7 @@ const packageContents: Record<string, PackageContent> = {
           'Security',
         ],
         htmlContent:
-          '<h4 class="mt-16 font-body text-xl font-bold">Hall Setup Styles and Capacities:</h4><table class="mt-8 w-full table-auto border-collapse border border-gray-300"><thead><tr class="bg-gray-200"><th class="border border-gray-300 px-4 py-2 text-sm">Setup Style</th><th class="border border-gray-300 px-4 py-2 text-sm">Capacity</th></tr></thead><tbody><tr class="odd:bg-white"><td class="border border-gray-300 px-4 py-2 text-sm">Theater</td><td class="border border-gray-300 px-4 py-2 text-sm">100</td></tr><tr class="even:bg-gray-100"><td class="border border-gray-300 px-4 py-2 text-sm">Fishbone/Classroom</td><td class="border border-gray-300 px-4 py-2 text-sm">60</td></tr><tr class="odd:bg-white"><td class="border border-gray-300 px-4 py-2 text-sm">U-Shape</td><td class="border border-gray-300 px-4 py-2 text-sm">70</td></tr></tbody></table>',
+          '<h4 class="mt-16 font-body text-xl">Hall Setup Styles and Capacities:</h4><table class="mt-8 w-full table-auto border-collapse border border-gray-300"><thead><tr class="bg-gray-200"><th class="border border-gray-300 px-4 py-2 text-sm">Setup Style</th><th class="border border-gray-300 px-4 py-2 text-sm">Capacity</th></tr></thead><tbody><tr class="odd:bg-white"><td class="border border-gray-300 px-4 py-2 text-sm">Theater</td><td class="border border-gray-300 px-4 py-2 text-sm">100</td></tr><tr class="even:bg-gray-100"><td class="border border-gray-300 px-4 py-2 text-sm">Fishbone/Classroom</td><td class="border border-gray-300 px-4 py-2 text-sm">60</td></tr><tr class="odd:bg-white"><td class="border border-gray-300 px-4 py-2 text-sm">U-Shape</td><td class="border border-gray-300 px-4 py-2 text-sm">70</td></tr></tbody></table>',
       },
     ],
   },
@@ -455,14 +455,14 @@ const PackageComponent = () => {
                     {highlights.map((highlight) => (
                       <li
                         key={highlight}
-                        className="text-gradient border border-cyan-600 border-dark/30 px-4 py-2 font-bold hover:bg-dark/5"
+                        className="text-gradient border border-cyan-600 border-dark/30 px-4 py-2 font-semibold hover:bg-dark/5"
                       >
                         {highlight}
                       </li>
                     ))}
                   </ul>
 
-                  <h3 className="mt-16 font-body text-xl font-bold">
+                  <h3 className="mt-16 font-body text-xl">
                     Amenties:
                   </h3>
                   <ul className="mt-8 flex flex-wrap items-center gap-2 text-sm opacity-80">

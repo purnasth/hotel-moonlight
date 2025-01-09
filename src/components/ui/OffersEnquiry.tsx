@@ -90,7 +90,7 @@ const OffersEnquiry: React.FC<OffersEnquiryProps> = ({ offerTitle, onClose }) =>
         onClick={closeWithAnimation}
       >
         <div
-          className={`transition-700 relative w-full max-w-xl transform rounded-lg bg-light p-6 shadow-lg ${
+          className={`transition-700 relative w-full max-w-xl transform bg-light p-6 shadow-lg ${
             showModal ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
           }`}
           onClick={(e) => e.stopPropagation()}

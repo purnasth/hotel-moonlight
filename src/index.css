@@ -69,13 +69,13 @@
   button,
   ul,
   li {
-    @apply font-body font-normal;
+    @apply font-body font-normal tracking-wide;
   }
 
   div,
   p,
   span {
-    @apply font-body font-normal;
+    @apply font-body font-normal tracking-wide;
   }
 
   main {
