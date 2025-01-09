@@ -17,8 +17,10 @@ import ContactPage from './pages/ContactPage';
 import TawkToChat from './components/TawkToChat';
 import GalleryPage from './pages/GalleryPage';
 import Facilities from './pages/Facilities';
+import useLenisScroll from './utils/useLenisScroll';
 
 const App: React.FC = () => {
+  useLenisScroll();
   return (
     <>
       <Router>
