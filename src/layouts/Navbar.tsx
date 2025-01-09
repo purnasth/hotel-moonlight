@@ -136,6 +136,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       <header
+<<<<<<< HEAD
         className={`pointer-events-none fixed top-0 z-[60] flex w-full items-start p-4 md:p-6 transition-all duration-[1s] justify-between`}
       >
         <a
@@ -143,6 +144,15 @@ const Navbar: React.FC = () => {
           className={`pointer-events-auto origin-top object-contain transition-all duration-[1s] ${
             visible ? '-translate-y-2 md:-translate-y-0' : '-translate-y-40 scale-50'
           } ${window.scrollY === 0 ? 'md:bg-light p-1 md:p-2' : 'filter-none'} `}
+=======
+        className={`pointer-events-none fixed top-0 z-[60] flex w-full items-start justify-end p-6 transition-all duration-[1s] md:justify-between`}
+      >
+        <a
+          href="/"
+          className={`pointer-events-auto hidden origin-top object-contain transition-all duration-[1s] md:block ${
+            visible ? '-translate-y-0' : '-translate-y-40 scale-50'
+          } ${window.scrollY === 0 ? 'bg-light p-2' : 'filter-none'} `}
+>>>>>>> 63a281b67ec6f376136da756ec3dc76b66464647
         >
           <img
             src={logo}
@@ -151,7 +161,11 @@ const Navbar: React.FC = () => {
           />
         </a>
         <div className="flex items-center gap-4">
+<<<<<<< HEAD
           <Booking className="transition-300 pointer-events-auto flex items-center justify-center gap-1 border border-dark/30 bg-white px-2 md:px-4 py-2 md:py-1 text-primary hover:border-primary hover:bg-primary hover:text-light" />
+=======
+          <Booking className="transition-300 pointer-events-auto flex items-center justify-center gap-1 border border-dark/30 bg-white px-4 py-1 text-primary hover:border-primary hover:bg-primary hover:text-light" />
+>>>>>>> 63a281b67ec6f376136da756ec3dc76b66464647
           <button
             type="button"
             aria-label="Menu"
