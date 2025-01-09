@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import TestimonialSlider from '../components/TestimonialSlider';
-import logo from '../assets/logo.png';
+// import logo from '../assets/logo.png';
 import blueGradient from '../assets/pattern/blue-gradient.png';
 import moonLight from '../assets/arts/moon.png';
 import ContactAndSocial from '../components/ui/ContactAndSocial';
@@ -14,12 +14,12 @@ const Footer = () => {
         <img
           src={moonLight}
           alt="Moon Light"
-          className="absolute right-1/2 top-0 -z-10 size-full translate-x-1/2 object-contain opacity-30 blur-3xl"
+          className="absolute right-1/2 top-0 -z-10 size-full translate-x-1/2 object-contain opacity-10 blur-3xl"
         />
         <img
           src={moonLight}
           alt="Moon Light"
-          className="absolute right-1/2 top-0 -z-10 size-full translate-x-1/2 object-contain opacity-10"
+          className="absolute right-1/2 top-0 -z-10 size-full translate-x-1/2 object-contain opacity-5"
         />
 
         <div
@@ -28,20 +28,28 @@ const Footer = () => {
           aria-hidden="true"
         />
         <div className="container">
-          <h4 className="mb-16 text-center text-4xl">Valued Guests Feedback</h4>
-          <TestimonialSlider />
-          <hr className="border-1 my-12 border-light/20" />
+          <div className="grid grid-cols-3 gap-8">
+            <div className="col-span-1">
+              {/* <Link to="/">
+                <img
+                  src={logo}
+                  alt="logo"
+                  className={`mx-auto inline-flex h-48 w-56 items-center justify-center bg-light object-contain p-2 transition-all duration-[1s]`}
+                />
+              </Link> */}
+              <div className="flex origin-center flex-col gap-8">
+                <h4 className="mb-10 text-4xl">
+                  Contact Us
+                </h4>
+                <ContactAndSocial />
+              </div>
+            </div>
 
-          <div className="block text-center">
-            <Link to="/">
-              <img
-                src={logo}
-                alt="logo"
-                className={`mx-auto inline-flex h-48 w-56 items-center justify-center bg-light object-contain p-2 transition-all duration-[1s]`}
-              />
-            </Link>
-            <div className="filter-white my-8 flex items-center justify-center scale-125 origin-center">
-              <ContactAndSocial />
+            <div className="col-span-2">
+              <h4 className="mb-16 text-center text-4xl">
+                Valued Guests Feedback
+              </h4>
+              <TestimonialSlider />
             </div>
           </div>
 
@@ -71,7 +79,7 @@ const Footer = () => {
             </div>
           </div> */}
 
-          <p className="text-center text-sm">
+          <p className="text-left text-sm">
             &copy; {year} Hotel Moonlight. All rights reserved. Developed by
             <Link to="https://longtail.info" className="ml-1 font-bold">
               Longtail e-Media

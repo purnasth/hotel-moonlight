@@ -76,8 +76,8 @@ const TestimonialSlider: React.FC = () => {
         breakpoints={{
           640: { slidesPerView: 1 }, // 1 slide on smaller screens
           768: { slidesPerView: 2 }, // 2 slides on medium screens
-          1024: { slidesPerView: 3 }, // 3 slides on large screens
-          1280: { slidesPerView: 3 }, // 4 slides on extra-large screens
+          1024: { slidesPerView: 2 }, // 3 slides on large screens
+          1280: { slidesPerView: 2 }, // 4 slides on extra-large screens
         }}
         className="h-full"
       >

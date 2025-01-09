@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Kaftan Serif';
-  src: url('./assets/fonts/KaftanSerif.woff2');
+  font-family: 'polysans';
+  src: url('./assets/fonts/PolySans-Neutral.woff2');
 }
 
 @tailwind base;

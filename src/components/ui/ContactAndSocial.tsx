@@ -187,7 +187,7 @@ const ContactAndSocial: React.FC = () => {
                   <a
                     key={index}
                     href={detail.link}
-                    className="transition-300 inline-block text-base font-medium hover:text-primary hover:underline"
+                    className="transition-300 inline-block text-sm font-medium hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={detail.title}

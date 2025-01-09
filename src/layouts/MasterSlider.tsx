@@ -65,7 +65,7 @@ const MasterSlider: React.FC<MasterSliderProps> = ({
               className="-z-10 size-full object-cover"
             />
             {hasContent && (
-              <div className="absolute bottom-0 left-0 flex h-max w-full items-end justify-center space-y-2 bg-gradient-to-t from-black to-transparent p-6 pt-32 text-start md:p-10 lg:p-16">
+              <div className="absolute bottom-0 left-0 flex h-max w-full items-end justify-center space-y-2 bg-transparent p-6 pt-32 text-start md:p-10 lg:p-16">
                 {/* {slide.title && (
                   <h3 className="text-base capitalize leading-snug text-light sm:text-2xl md:text-4xl lg:text-5xl lg:leading-none">
                     {slide.title}

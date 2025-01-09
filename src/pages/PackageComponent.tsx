@@ -1,6 +1,31 @@
 import { Link, useParams } from 'react-router-dom';
 import MasterSlider from '../layouts/MasterSlider';
 
+// hall
+import hall1 from '../assets/images/hall/IMG_4736.webp';
+import hall2 from '../assets/images/hall/IMG_4770.webp';
+import hall3 from '../assets/images/hall/IMG_4862.webp';
+import hall4 from '../assets/images/hall/IMG_4864.webp';
+
+// spa
+import spa1 from '../assets/images/spa/IMG_0420.webp';
+import spa2 from '../assets/images/spa/IMG_0430.webp';
+import spa3 from '../assets/images/spa/IMG_0454.webp';
+import spa4 from '../assets/images/spa/IMG_8865.webp';
+
+// dine
+import juneli1 from '../assets/images/dine/juneli/IMG_4820.webp';
+import juneli2 from '../assets/images/dine/juneli/IMG_4781.webp';
+import palm1 from '../assets/images/dine/palm/IMG_4849.webp';
+import palm2 from '../assets/images/dine/palm/IMG_4835.webp';
+
+// stay
+import room1 from '../assets/images/room/IMG_4705.webp';
+import room2 from '../assets/images/room/IMG_4753.webp';
+import room3 from '../assets/images/room/IMG_8882.webp';
+import room4 from '../assets/images/room/IMG_8970.webp';
+
+
 interface PackageContent {
   id: string;
   title: string;
@@ -37,7 +62,7 @@ const packageContents: Record<string, PackageContent> = {
       'Stay in our luxurious rooms and enjoy the ultimate comfort and relaxation.',
     imageUrl: 'https://hotelmoonlight.com/images/subpackage/HOGxu-b4.jpg',
     router: '/stay',
-    booking: '/contact#form',
+    booking: 'https://hotelmoonlight.com/result.php?hotel_code=MQYYCu',
     packages: [
       {
         id: 'boutique-room',
@@ -48,24 +73,20 @@ const packageContents: Record<string, PackageContent> = {
         imageUrl: 'https://hotelmoonlight.com/images/subpackage/HOGxu-b4.jpg',
         slides: [
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/Nk7Bq-slide1.jpg',
-            title: 'Welcome to Hotel Moonlight',
+            image: room1,
+            title: 'Boutique Room',
           },
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/2WkOb-slide2.jpg',
-            title: 'Indulge in the luxury of our rooms',
+            image: room2,
+            title: 'Boutique Room',
           },
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/egdfB-slider3.jpg',
-            title: 'Taste the best of Nepali cuisine',
+            image: room3,
+            title: 'Boutique Room',
           },
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/r09zz-slide3.jpg',
-            title: 'Wellness and relaxation',
+            image: room4,
+            title: 'Boutique Room',
           },
         ],
         highlights: [
@@ -99,24 +120,20 @@ const packageContents: Record<string, PackageContent> = {
         imageUrl: 'https://hotelmoonlight.com/images/subpackage/HOGxu-b4.jpg',
         slides: [
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/Nk7Bq-slide1.jpg',
-            title: 'Welcome to Hotel Moonlight',
+            image: room1,
+            title: 'Deluxe Room',
           },
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/2WkOb-slide2.jpg',
-            title: 'Indulge in the luxury of our rooms',
+            image: room2,
+            title: 'Deluxe Room',
           },
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/egdfB-slider3.jpg',
-            title: 'Taste the best of Nepali cuisine',
+            image: room3,
+            title: 'Deluxe Room',
           },
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/r09zz-slide3.jpg',
-            title: 'Wellness and relaxation',
+            image: room4,
+            title: 'Deluxe Room',
           },
         ],
         highlights: [
@@ -162,24 +179,12 @@ const packageContents: Record<string, PackageContent> = {
           'https://hotelmoonlight.com/assets/userfiles/images/rooftop.jpg',
         slides: [
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/Nk7Bq-slide1.jpg',
-            title: 'Welcome to Hotel Moonlight',
+            image: juneli1,
+            title: 'Juneli Restaurant',
           },
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/2WkOb-slide2.jpg',
-            title: 'Indulge in the luxury of our rooms',
-          },
-          {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/egdfB-slider3.jpg',
-            title: 'Taste the best of Nepali cuisine',
-          },
-          {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/r09zz-slide3.jpg',
-            title: 'Wellness and relaxation',
+            image: juneli2,
+            title: 'Juneli Restaurant',
           },
         ],
         highlights: [
@@ -218,24 +223,12 @@ const packageContents: Record<string, PackageContent> = {
           'https://hotelmoonlight.com/assets/userfiles/images/garden.jpg',
         slides: [
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/Nk7Bq-slide1.jpg',
-            title: 'Welcome to Hotel Moonlight',
+            image: palm1,
+            title: 'Palm Garden',
           },
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/2WkOb-slide2.jpg',
-            title: 'Indulge in the luxury of our rooms',
-          },
-          {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/egdfB-slider3.jpg',
-            title: 'Taste the best of Nepali cuisine',
-          },
-          {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/r09zz-slide3.jpg',
-            title: 'Wellness and relaxation',
+            image: palm2,
+            title: 'Palm Garden',
           },
         ],
         highlights: [
@@ -286,24 +279,20 @@ const packageContents: Record<string, PackageContent> = {
           'https://hotelmoonlight.com/images/gallery/galleryimages/TGsxU-h9.jpg',
         slides: [
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/Nk7Bq-slide1.jpg',
-            title: 'Welcome to Hotel Moonlight',
+            image: hall1,
+            title: 'Athithi Hall',
           },
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/2WkOb-slide2.jpg',
-            title: 'Indulge in the luxury of our rooms',
+            image: hall2,
+            title: 'Athithi Hall',
           },
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/egdfB-slider3.jpg',
-            title: 'Taste the best of Nepali cuisine',
+            image: hall3,
+            title: 'Athithi Hall',
           },
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/r09zz-slide3.jpg',
-            title: 'Wellness and relaxation',
+            image: hall4,
+            title: 'Athithi Hall',
           },
         ],
         highlights: [
@@ -353,24 +342,20 @@ const packageContents: Record<string, PackageContent> = {
         imageUrl: 'https://hotelmoonlight.com/assets/userfiles/images/spa2.jpg',
         slides: [
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/Nk7Bq-slide1.jpg',
-            title: 'Welcome to Hotel Moonlight',
+            image: spa1,
+            title: 'Moonlight SPA',
           },
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/2WkOb-slide2.jpg',
-            title: 'Indulge in the luxury of our rooms',
+            image: spa2,
+            title: 'Moonlight SPA',
           },
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/egdfB-slider3.jpg',
-            title: 'Taste the best of Nepali cuisine',
+            image: spa3,
+            title: 'Moonlight SPA',
           },
           {
-            image:
-              'https://hotelmoonlight.com/images/slideshow/r09zz-slide3.jpg',
-            title: 'Wellness and relaxation',
+            image: spa4,
+            title: 'Moonlight SPA',
           },
         ],
         highlights: ['Spa Treatments', 'Massage', 'Facials', 'Body Treatments'],
@@ -410,8 +395,8 @@ const PackageComponent = () => {
 
   return (
     <>
-      <main key={id}>
-        <div className="mb-16">
+      <main key={id} className="px-0">
+        <div className="container mb-16">
           <h1 className="text-gradient max-w-6xl text-2xl font-medium md:text-4xl lg:text-6xl lg:leading-snug">
             {title}
           </h1>
@@ -452,7 +437,7 @@ const PackageComponent = () => {
                   </div> */}
                 </div>
                 <div
-                  className={`${index % 2 === 0 ? 'col-span-2' : 'order-1 col-span-2'}`}
+                  className={`container ${index % 2 === 0 ? 'col-span-2' : 'order-1 col-span-2'}`}
                 >
                   <div className="mt-12 flex items-center justify-between">
                     <h2 className="text-gradient text-2xl font-medium md:text-4xl lg:text-5xl lg:leading-snug">
