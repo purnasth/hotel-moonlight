@@ -16,7 +16,7 @@ const SliderNavigation: React.FC<SliderNavigationProps> = ({
   onPrev,
 }) => {
   return (
-    <div className="bg-gradient flex h-7 items-center gap-0 overflow-hidden rounded-full border border-light/40 px-4">
+    <div className="bg-gradient xl:mb-16 flex h-7 items-center gap-0 overflow-hidden rounded-full border border-light/40 px-4">
       <button
         onClick={onPrev}
         aria-label="Previous"

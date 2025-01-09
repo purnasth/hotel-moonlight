@@ -115,7 +115,7 @@ const ContactForm: React.FC = ({}) => {
             type="submit"
             aria-label="Submit"
             title="Submit"
-            className={`transition-300 bg-gradient h group mt-4 flex items-center gap-2 border border-primary px-6 py-2 font-semibold text-light ${
+            className={`transition-300 bg-gradient h group mt-4 flex items-center gap-2 border border-primary px-6 py-2 text-light ${
               isSubmitting ? 'cursor-not-allowed opacity-75' : ''
             }`}
             disabled={isSubmitting}

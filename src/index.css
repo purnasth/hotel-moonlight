@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Kaftan Serif';
-  src: url('./assets/fonts/KaftanSerif.woff2');
+  font-family: 'polysans';
+  src: url('./assets/fonts/PolySans-Neutral.woff2');
 }
 
 @tailwind base;
@@ -9,7 +9,7 @@
 
 @layer components {
   ::selection {
-    @apply bg-dark text-light;
+    @apply bg-primary text-light;
   }
 
   /* * {
@@ -69,13 +69,13 @@
   button,
   ul,
   li {
-    @apply font-body font-normal;
+    @apply font-body font-normal tracking-wide;
   }
 
   div,
   p,
   span {
-    @apply font-body font-normal;
+    @apply font-body font-normal tracking-wide;
   }
 
   main {

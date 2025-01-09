@@ -16,7 +16,7 @@ module.exports = {
           'Cambria',
           'serif',
         ],
-        body: ['"Montserrat"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        body: ['"PolySans"','Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         inherit: 'inherit',

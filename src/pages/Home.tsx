@@ -1,18 +1,20 @@
 import React from 'react';
 import Services from '../components/ui/Services';
 // import DemoService from '../components/ui/DemoService';
-import HighlightReview from '../components/ui/HighlightReview';
+// import HighlightReview from '../components/ui/HighlightReview';
 import About from '../components/About';
 import Offers from '../components/Offers';
 import Gallery from '../components/ui/Gallery';
 import BookingRating from '../components/ui/BookingRating';
-import Hero from '../components/Hero';
+// import Hero from '../components/Hero';
+import IntroVideo from '../components/IntroVideo';
 
 const Home: React.FC = () => {
   return (
     <>
       {/* <Intro /> */}
-      <Hero />
+      <IntroVideo />
+      {/* <Hero /> */}
       <About />
       <Services />
       <Offers />
@@ -23,7 +25,7 @@ const Home: React.FC = () => {
         </div>
       </main>
       {/* <DemoService /> */}
-      <HighlightReview />
+      {/* <HighlightReview /> */}
     </>
   );
 };

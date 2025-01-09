@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../assets/logo.png';
-// import { TbMenu } from 'react-icons/tb';
 import { matchPath, NavLink, useLocation } from 'react-router-dom';
 import blueGradient from '../assets/pattern/blue-gradient.png';
-import { IoIosMenu } from 'react-icons/io';
+import { IoIosMenu, IoIosClose } from 'react-icons/io';
 import Booking from '../components/ui/Booking';
 
 const navLinks = [
@@ -85,6 +84,14 @@ const navLinks = [
       'https://hotelmoonlight.com/images/gallery/galleryimages/1PXk5-r8.jpg',
     priority: 'low',
   },
+  {
+    id: 9,
+    title: 'Facilities',
+    url: '/facilities',
+    demoImage:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/1PXk5-r8.jpg',
+    priority: 'low',
+  },
 ];
 
 const Navbar: React.FC = () => {
@@ -129,28 +136,33 @@ const Navbar: React.FC = () => {
   return (
     <>
       <header
-        className={`pointer-events-none fixed top-0 z-[60] flex w-full items-start justify-between p-6 transition-all duration-[1s]`}
+        className={`pointer-events-none fixed top-0 z-[60] flex w-full items-start p-4 md:p-6 transition-all duration-[1s] justify-between`}
       >
         <a
           href="/"
           className={`pointer-events-auto origin-top object-contain transition-all duration-[1s] ${
-            visible ? '-translate-y-0' : '-translate-y-40 scale-50'
-          } ${window.scrollY === 0 ? 'bg-light p-2' : 'filter-none'} `}
+            visible ? '-translate-y-2 md:-translate-y-0' : '-translate-y-40 scale-50'
+          } ${window.scrollY === 0 ? 'md:bg-light p-1 md:p-2' : 'filter-none'} `}
         >
-          <img src={logo} alt="logo" className={`h-28 w-40 object-contain`} />
+          <img
+            src={logo}
+            alt="logo"
+            className={`h-10 w-auto object-contain md:h-28 md:w-40`}
+          />
         </a>
         <div className="flex items-center gap-4">
-          <Booking className="transition-300 pointer-events-auto flex items-center justify-center gap-1 border border-dark/30 bg-white px-4 py-1 text-dark hover:border-dark hover:bg-dark hover:text-light" />
+          <Booking className="transition-300 pointer-events-auto flex items-center justify-center gap-1 border border-dark/30 bg-white px-2 md:px-4 py-2 md:py-1 text-primary hover:border-primary hover:bg-primary hover:text-light" />
           <button
             type="button"
             aria-label="Menu"
-            className="transition-300 pointer-events-auto flex items-center justify-center gap-1 border border-dark/30 bg-white px-1 py-0 text-dark hover:animate-pulse hover:text-light"
+            className="transition-300 pointer-events-auto flex items-center justify-center border border-dark/30 bg-white px-1 py-0 text-dark hover:animate-pulse hover:text-light"
             onClick={toggleNav}
           >
-            {/* <span className="px-2 text-xs font-light uppercase tracking-wide group-hover:animate-pulse">
-            Menu
-          </span> */}
-            <IoIosMenu className="origin-center bg-white p-1 text-3xl text-dark group-hover:animate-pulse" />
+            {isOpen ? (
+              <IoIosClose className="origin-center scale-150 p-1 text-3xl text-dark group-hover:animate-pulse" />
+            ) : (
+              <IoIosMenu className="origin-center p-1 text-3xl text-dark group-hover:animate-pulse" />
+            )}
           </button>
         </div>
 
@@ -170,7 +182,7 @@ const Navbar: React.FC = () => {
       </header>
 
       <nav
-        className={`transition-700 fixed left-0 top-0 h-screen w-full overflow-y-auto bg-light ${
+        className={`transition-700 fixed left-0 top-0 h-full min-h-screen w-full overflow-y-auto bg-light ${
           isOpen
             ? 'pointer-events-auto opacity-100'
             : 'pointer-events-none opacity-0'
@@ -181,13 +193,13 @@ const Navbar: React.FC = () => {
           style={{ backgroundImage: `url(${blueGradient})` }}
           aria-hidden="true"
         />
-        <div className="container grid size-full grid-cols-2 content-center items-center gap-12">
+        <div className="container grid size-full grid-cols-1 content-center items-center gap-12 lg:grid-cols-2">
           {/* Dynamic Image */}
           <div className="relative flex size-full items-end justify-end">
             <img
               src={activeImage || ''}
               alt="Active Section"
-              className="h-[70vh] w-96 object-cover transition-all duration-500 ease-in-out"
+              className="h-64 w-full object-cover transition-all duration-500 ease-in-out md:h-80 lg:h-[70vh] lg:w-96"
             />
           </div>
 
@@ -220,7 +232,7 @@ const Navbar: React.FC = () => {
             </ul>
 
             {/* Low Priority Links */}
-            <ul className="links flex max-w-sm flex-wrap gap-2 md:gap-5">
+            <ul className="links flex max-w-sm flex-wrap gap-5">
               {lowPriorityLinks.map((link) => (
                 <li key={link.id} className="group">
                   <NavLink

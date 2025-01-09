@@ -1,24 +1,39 @@
 // import athithiArts from '../assets/arts/athithi.png';
 // import moonLight from '../assets/arts/moon.png';
 
+import slider1 from '../assets/images/slide/1.webp';
+import slider2 from '../assets/images/slide/2.webp';
+import slider3 from '../assets/images/slide/3.webp';
+import slider4 from '../assets/images/slide/4.webp';
+import slider5 from '../assets/images/slide/5.webp';
+import slider6 from '../assets/images/slide/6.webp';
+
 import MasterSlider from '../layouts/MasterSlider';
 
 const sliderImages = [
   {
-    image: 'https://hotelmoonlight.com/images/slideshow/Nk7Bq-slide1.jpg',
-    title: 'Welcome to Hotel Moonlight',
+    image: slider1,
+    title: 'Hotel Moonlight',
   },
   {
-    image: 'https://hotelmoonlight.com/images/slideshow/2WkOb-slide2.jpg',
-    title: 'Indulge in the luxury of our rooms',
+    image: slider2,
+    title: 'Hotel Moonlight',
   },
   {
-    image: 'https://hotelmoonlight.com/images/slideshow/egdfB-slider3.jpg',
-    title: 'Taste the best of Nepali cuisine',
+    image: slider3,
+    title: 'Hotel Moonlight',
   },
   {
-    image: 'https://hotelmoonlight.com/images/slideshow/r09zz-slide3.jpg',
-    title: 'Wellness and relaxation',
+    image: slider4,
+    title: 'Hotel Moonlight',
+  },
+  {
+    image: slider5,
+    title: 'Hotel Moonlight',
+  },
+  {
+    image: slider6,
+    title: 'Hotel Moonlight',
   },
 ];
 
@@ -39,16 +54,17 @@ const About = () => {
         <h2 className="text-center text-3xl">Athithi Devo Bhava</h2>
       </div> */}
 
-      <div className="container space-y-8 text-center">
-        <h2 className="text-3xl">Athithi Devo Bhava</h2>
+      <div className="container space-y-4 md:space-y-8 text-center">
+        {/* <h2 className="text-3xl">Athithi Devo Bhava</h2> */}
+        <h2 className="text-2xl md:text-4xl font-medium">अतिथि देवो भव:</h2>
 
-        <h3 className="text-gradient text-6xl leading-snug">
+        <h3 className="text-gradient leading-snug text-2xl md:text-4xl lg:text-6xl lg:leading-snug">
           The Hotel Moonlight is more than 'bricks & stones', it's about our
           people & our guests.
         </h3>
       </div>
 
-      <div className="col-span-2 mt-24">
+      <div className="col-span-2 mt-12 md:mt-24">
         {/* <iframe
             src="https://www.youtube.com/embed/_jfHeaH6Xwk"
             title="Hotel moonlight | Kathmandu Hotels | Thamel Hotel | Hotel Promo Video | Longtail e-media"
@@ -56,7 +72,11 @@ const About = () => {
             className="size-full min-h-[28.75rem]"
           ></iframe> */}
 
-        <MasterSlider slides={sliderImages} hasContent={true} />
+        <MasterSlider
+          slides={sliderImages}
+          hasContent={true}
+          sizeClassName="relative flex h-80 md:h-[50vh] xl:h-[110vh] items-center justify-center"
+        />
       </div>
     </main>
   );

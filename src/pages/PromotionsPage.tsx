@@ -67,7 +67,7 @@ const PromotionsPage: React.FC = () => {
               <div className="absolute inset-0 z-10 flex flex-col items-center justify-end px-12 py-8 text-center text-light">
                 <button
                   onClick={() => toggleOffersEnquiry(content.title)}
-                  className="transition-300 flex items-center gap-2 rounded-full border border-light/50 bg-light/10 px-4 py-2 font-medium text-light backdrop-blur group-hover:bg-light/30"
+                  className="transition-300 flex items-center gap-2 border border-light/50 bg-light/10 px-4 py-2 font-medium text-light backdrop-blur group-hover:bg-light/30"
                   type="button"
                   aria-label="Enquiry Now"
                   title="Enquiry Now"

@@ -16,6 +16,7 @@ import PromotionsPage from './pages/PromotionsPage';
 import ContactPage from './pages/ContactPage';
 import TawkToChat from './components/TawkToChat';
 import GalleryPage from './pages/GalleryPage';
+import Facilities from './pages/Facilities';
 
 const App: React.FC = () => {
   return (
@@ -30,6 +31,7 @@ const App: React.FC = () => {
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/offers" element={<PromotionsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/facilities" element={<Facilities />} />
           <Route path="/article/:slug" element={<ArticlePage />} />
         </Routes>
         <Footer />

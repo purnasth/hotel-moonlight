@@ -120,7 +120,7 @@ const GalleryPage: React.FC = () => {
           <LightGallery
             plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen]}
             mode="lg-fade"
-            elementClassNames="w-full columns-3 sm:columns-2 lg:columns-3 xl:columns-4 gap-2 md:gap-4"
+            elementClassNames="w-full columns-2 sm:columns-2 lg:columns-2 xl:columns-4 gap-2 md:gap-4"
             thumbnail={true}
             autoplay={true}
           >
