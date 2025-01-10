@@ -121,11 +121,11 @@ export const packageContents: Record<string, PackageContent> = {
         imageUrl: 'https://hotelmoonlight.com/images/subpackage/HOGxu-b4.jpg',
         slides: [
           {
-            image: room1,
+            image: room2,
             title: 'Deluxe Room',
           },
           {
-            image: room2,
+            image: room4,
             title: 'Deluxe Room',
           },
           {
@@ -133,7 +133,7 @@ export const packageContents: Record<string, PackageContent> = {
             title: 'Deluxe Room',
           },
           {
-            image: room4,
+            image: room1,
             title: 'Deluxe Room',
           },
         ],
@@ -163,7 +163,7 @@ export const packageContents: Record<string, PackageContent> = {
   },
   dine: {
     id: 'Dine',
-    title: 'Dine in style & Be pampered with our culinary delights',
+    title: 'Dine in style with our culinary delights',
     description:
       'Stay in our luxurious rooms and enjoy the ultimate comfort and relaxation.',
     imageUrl: 'https://hotelmoonlight.com/assets/userfiles/images/garden.jpg',
@@ -267,7 +267,7 @@ export const packageContents: Record<string, PackageContent> = {
       'Stay in our luxurious rooms and enjoy the ultimate comfort and relaxation.',
     imageUrl:
       'https://hotelmoonlight.com/assets/userfiles/images/Conferencehall.jpg',
-    router: '/occasion',
+    router: '/occasions',
     booking: '/contact#form',
     packages: [
       {
@@ -502,5 +502,120 @@ export const otaLinks = [
     title: 'MakeMyTrip',
     link: 'https://hotelmoonlight.com/template/web/assets/img/booking-engine/makemytrip.png',
     src: 'https://play-lh.googleusercontent.com/19I7zjhAAAud9AztLiIxD1MYVdHusoeaW2-7Fx2FUJvcVZBbUBcGKjBBVPsHkFBLWMs',
+  },
+];
+
+export const galleryImages = [
+  {
+    id: 1,
+    image:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/c0A4o-r1.jpg',
+    title: 'Accommodation',
+    category: 'Accommodation',
+  },
+  {
+    id: 2,
+    image:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/b4EyZ-r7.jpg',
+    title: 'Fine Dine',
+    category: 'Fine Dine',
+  },
+  {
+    id: 3,
+    image:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/5KZxo-h5.jpg',
+    title: 'Occasion',
+    category: 'Occasion',
+  },
+  {
+    id: 4,
+    image:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/055Di-e9.jpg',
+    title: 'Exterior',
+    category: 'Exterior',
+  },
+  {
+    id: 5,
+    image:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/YLgds-r14.jpg',
+    title: 'Accommodation',
+    category: 'Accommodation',
+  },
+  {
+    id: 6,
+    image:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/pJzQ6-r3.jpg',
+    title: 'Fine Dine',
+    category: 'Fine Dine',
+  },
+  {
+    id: 7,
+    image:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/Zkz2s-h2.jpg',
+    title: 'Occasion',
+    category: 'Occasion',
+  },
+  {
+    id: 8,
+    image:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/FtZ2D-e5.jpg',
+    title: 'Exterior',
+    category: 'Exterior',
+  },
+  {
+    id: 9,
+    image:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/2sbo2-r11.jpg',
+    title: 'Accommodation',
+    category: 'Accommodation',
+  },
+  {
+    id: 10,
+    image:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/6hgTT-r11.jpg',
+    title: 'Fine Dine',
+    category: 'Fine Dine',
+  },
+  {
+    id: 11,
+    image:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/PCsIm-h7.jpg',
+    title: 'Occasion',
+    category: 'Occasion',
+  },
+  {
+    id: 12,
+    image:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/sfcI4-e4.jpg',
+    title: 'Exterior',
+    category: 'Exterior',
+  },
+  {
+    id: 13,
+    image:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/ymv9M-r5.jpg',
+    title: 'Accommodation',
+    category: 'Accommodation',
+  },
+  {
+    id: 14,
+    image:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/nKalB-r1.jpg',
+    title: 'Fine Dine',
+    category: 'Fine Dine',
+  },
+  {
+    id: 15,
+    image:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/EJ0XL-h4.jpg',
+    title: 'Occasion',
+    category: 'Occasion',
+  },
+  {
+    id: 16,
+    image:
+      'https://hotelmoonlight.com/images/gallery/galleryimages/JfNu4-e1.jpg',
+    title: 'Exterior',
+    category: 'Exterior',
   },
 ];
