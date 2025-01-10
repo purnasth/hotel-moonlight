@@ -82,7 +82,7 @@ const About = () => {
         <MultiSizeSlider
           slides={sliderImages}
           hasContent={false}
-          sizeClassName="relative flex h-80 md:h-[50vh] items-center justify-center"
+          sizeClassName="relative flex h-80 md:h-[65vh] items-center justify-center"
         />
       </div>
     </main>

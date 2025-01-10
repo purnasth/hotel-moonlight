@@ -11,6 +11,7 @@ import IntroVideo from '../components/IntroVideo';
 import AccommodationHome from '../components/AccommodationHome';
 import GalleryHome from '../components/ui/GalleryHome';
 import ServicesHome from '../components/ui/ServicesHome';
+import FacilitiesHome from '../components/FacilitiesHome';
 
 const Home: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const Home: React.FC = () => {
       <ServicesHome />
       {/* <Services /> */}
       {/* <Offers /> */}
+      <FacilitiesHome />
       <GalleryHome />
       {/* <main className="p-0 px-4">
         <Gallery />

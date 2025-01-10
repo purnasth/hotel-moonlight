@@ -94,6 +94,10 @@
     filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%);
   }
 
+  .filter-primary {
+    filter: brightness(0) saturate(100%) invert(17%) sepia(16%) saturate(4944%) hue-rotate(171deg) brightness(94%) contrast(98%);
+  }
+
   /* .bg-gradient {
     background: linear-gradient(
       89.5deg,

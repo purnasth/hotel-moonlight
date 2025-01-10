@@ -42,14 +42,16 @@ const WhatsApp: React.FC = () => {
     <>
       <button
         onClick={handleButtonClick}
+        // className={`${
+        //   showButton ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
+        // } transition-300 fixed bottom-8 right-8 z-40 inline-flex h-9 items-center justify-center gap-1 rounded-full border border-primary/30 bg-white px-4 py-2 text-primary hover:border-primary hover:bg-primary hover:text-light`}
         className={`${
           showButton ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
-        } transition-300 fixed bottom-8 right-8 z-40 inline-flex h-9 items-center justify-center gap-1 rounded-full border border-primary/30 bg-white px-4 py-2 text-primary hover:border-primary hover:bg-primary hover:text-light`}
+        } transition-300 fixed bottom-8 right-8 z-40 inline-flex items-center justify-center gap-1 rounded-full border border-primary/30 bg-primary p-2 text-light hover:border-primary hover:bg-light hover:text-primary`}
         title="WhatsApp"
         aria-label="WhatsApp"
       >
-        <span className="text-sm uppercase">Need Help?</span>
-        <TbBrandWhatsapp className="text-2xl" />
+        <TbBrandWhatsapp className="text-3xl" />
       </button>
 
       {showQrModal && (
