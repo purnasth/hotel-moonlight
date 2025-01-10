@@ -8,7 +8,8 @@ import slider4 from '../assets/images/slide/4.webp';
 import slider5 from '../assets/images/slide/5.webp';
 import slider6 from '../assets/images/slide/6.webp';
 
-import MasterSlider from '../layouts/MasterSlider';
+// import MasterSlider from '../layouts/MasterSlider';
+import MultiSizeSlider from '../layouts/MultiSizeSlider';
 
 const sliderImages = [
   {
@@ -54,14 +55,20 @@ const About = () => {
         <h2 className="text-center text-3xl">Athithi Devo Bhava</h2>
       </div> */}
 
-      <div className="container space-y-4 md:space-y-8 text-center">
+      <div className="container space-y-4 text-center md:space-y-8">
         {/* <h2 className="text-3xl">Athithi Devo Bhava</h2> */}
-        <h2 className="text-2xl md:text-4xl font-medium">अतिथि देवो भव:</h2>
+        <h2 className="text-2xl font-medium md:text-4xl">अतिथि देवो भव:</h2>
 
-        <h3 className="text-gradient leading-snug text-2xl md:text-4xl lg:text-6xl lg:leading-snug">
+        <h3 className="text-gradient text-2xl leading-snug md:text-4xl lg:text-6xl lg:leading-snug">
           The Hotel Moonlight is more than 'bricks & stones', it's about our
           people & our guests.
         </h3>
+        {/* <p className="mx-auto mb-12 max-w-xl px-4 text-center text-base opacity-70 lg:mb-24">
+          Hotel Moonlight offers all the modern facilities you would expect,
+          while retaining traditional Nepali ambiance and hospitality. From our
+          front gate you can take an easy stroll to the hustle and bustle of
+          Thamel, with its array of shops, restaurants, bars and nightlife.
+        </p> */}
       </div>
 
       <div className="col-span-2 mt-12 md:mt-24">
@@ -72,10 +79,10 @@ const About = () => {
             className="size-full min-h-[28.75rem]"
           ></iframe> */}
 
-        <MasterSlider
+        <MultiSizeSlider
           slides={sliderImages}
-          hasContent={true}
-          sizeClassName="relative flex h-80 md:h-[50vh] xl:h-[110vh] items-center justify-center"
+          hasContent={false}
+          sizeClassName="relative flex h-80 md:h-[50vh] items-center justify-center"
         />
       </div>
     </main>

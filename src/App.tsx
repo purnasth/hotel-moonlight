@@ -14,7 +14,7 @@ import ArticlePage from './pages/ArticlePage';
 import PackageComponent from './pages/PackageComponent';
 import PromotionsPage from './pages/PromotionsPage';
 import ContactPage from './pages/ContactPage';
-import TawkToChat from './components/TawkToChat';
+// import TawkToChat from './components/TawkToChat';
 import GalleryPage from './pages/GalleryPage';
 import Facilities from './pages/Facilities';
 import useLenisScroll from './utils/useLenisScroll';
@@ -36,8 +36,8 @@ const App: React.FC = () => {
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/article/:slug" element={<ArticlePage />} />
         </Routes>
-        <Footer />
-        <TawkToChat />
+      <Footer />
+        {/* <TawkToChat /> */}
       </Router>
     </>
   );

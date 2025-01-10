@@ -1,5 +1,5 @@
 import React from 'react';
-import Services from '../components/ui/Services';
+// import Services from '../components/ui/Services';
 // import DemoService from '../components/ui/DemoService';
 // import HighlightReview from '../components/ui/HighlightReview';
 import About from '../components/About';
@@ -8,6 +8,7 @@ import Gallery from '../components/ui/Gallery';
 import BookingRating from '../components/ui/BookingRating';
 // import Hero from '../components/Hero';
 import IntroVideo from '../components/IntroVideo';
+import AccommodationHome from '../components/AccommodationHome';
 
 const Home: React.FC = () => {
   return (
@@ -16,7 +17,8 @@ const Home: React.FC = () => {
       <IntroVideo />
       {/* <Hero /> */}
       <About />
-      <Services />
+      <AccommodationHome />
+      {/* <Services /> */}
       <Offers />
       <main className="p-0 px-4">
         <Gallery />
